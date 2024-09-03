@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>식단표</title>
+    <style>
+        div{
+            border: 1.5px solid #13c4db;
+            width: 460px; 
+            padding: 30px;
+        }
+        h1{
+            text-align: center;
+        }
+        table {
+            border:1px solid #000;
+            width: 400px;
+            border-collapse: collapse;
+            margin: 0 auto;
+        }
+        caption{
+            font-size: 20px;
+            font-weight: bold;
+            margin-bottom : 10;
+        }
+       th,td{
+        border: 1px solid #000;
+        border-collapse: collapse;
+       }
+
+    </style>
+    
+</head>
+<body>
+    <div id="wrap">
+        <table>
+        
+            <h1>식단표(담당 쉐프 → 이나현)</h1>
+            <!-- Emmet : table>caption+tbody>tr*3>td*3-->
+            <caption> 5월9일 알베르게 조식 </caption>
+
+            <tbody>
+          
+            <tr>
+                <th>구분</th>
+                <th colspan="2">메뉴</th>
+            </tr>
+            <tr>
+                <th rowspan="2">시간 <br>7시~9시</th>
+                <th>한식</th>
+                <th>양식</th>
+            </tr>
+            <tr>
+               
+                <td>
+                    <ul>
+                        <li>현미밥</li>
+                        <li>소고기무국</li>
+                        <li>밑반찬4종류</li>
+                    </ul>
+                </td>
+                <td>
+                    <ul>
+                        <li>모닝빵</li>
+                        <li>쩀&버터</li>
+                        <li>에그스크램블</li>
+                        <li>커피</li>
+                    </ul>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+    
+</body>
+</html>
