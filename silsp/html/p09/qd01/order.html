@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>상품주문서</title>
+    <style>
+        #wrap {
+            padding: 0 10px;
+            width: 600px;
+            margin: 0_auto;
+            border: 1px solid #000;
+        }
+
+        #button {
+            text-align: center;
+            border: none;
+        }
+
+        legend {
+            font-size: 18px;
+            color: blueviolet;
+            font-weight: bold;
+
+        }
+
+        #fild1,
+        #fild2,
+        #fild3 {
+            border: 2px solid #000;
+        }
+
+        span {
+            width: 80px;
+            display: block;
+            font-weight: bold;
+        }
+
+        .box {
+            display: flex;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="wrap">
+        <h1>상품주문서</h1>
+        <fieldset id="fild1">
+            <legend><b>개인 정보</b></legend>
+            이름&nbsp;&nbsp; <input type="text" placeholder="여백없이 입력">
+            <br>
+            연락처<input type="text" placeholder="연락가능한 번호">
+        </fieldset>
+
+        <fieldset id="fild2">
+            <legend>배송지 정보</legend>
+
+            <div class="box">
+                <span>주소</span>
+                <input type="text"><br>
+            </div>
+
+            <div class="box">
+                <span> 전화번호 </span>
+                <input type="text "><br>
+            </div>
+
+            <div class="box">
+                <span>메 모</span><textarea name="" rows="3" cols="30"></textarea>
+            </div>
+        </fieldset>
+
+        <fieldset id="fild3">
+            <legend>주문 정보</legend>
+            <fieldset id="ch">
+                <label>
+                    <input type="checkbox" checked>
+                    과테말라 안티구아 (100g)
+                    <input type="text" style="width: 70px;" placeholder="0"> 개</label> <br>
+                <label>
+                    <input type="checkbox">
+                    인도네시아 만델링 (100g)
+                    <input type="text" style="width: 70px;" placeholder="0"> 개</label><br>
+                <label>
+                    <input type="checkbox">
+                    탐라는도다(블렌딩) (100g)
+                    <input type="text" style="width: 70px;" placeholder="0"> 개</label>
+            </fieldset>
+        </fieldset>
+        <br>
+
+        <fieldset id="button">
+            <button type="submit">주문하기</button>
+            <span><button type="reset">다시 작성</button></span>
+        </fieldset>
+    </div>
+</body>
+
+</html>
