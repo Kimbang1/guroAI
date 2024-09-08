@@ -1,0 +1,57 @@
+@charset "UTF-8";
+
+input {
+  background-color: #f5f5f5;
+  border: none;
+  width: 190px;
+  height: 30px;
+  margin: 10px;
+}
+
+button {
+  background-color: #ffac00;
+  border: none;
+  width: 100px;
+  height: 100px;
+  color: #f5f5f5;
+  cursor: pointer;
+  font-size: 18px;
+
+
+#option {
+  display: flex;
+}
+#dis {
+  padding: 10px;
+  border: 1.5px solid #b0b0b0;
+  border-bottom: none;
+  border-right: none;
+  width: 210px;
+  height: 110px;
+  
+}
+#log{
+border: 1.5px solid #b0b0b0;
+border-left: none;
+border-bottom: none;
+padding: 10px;
+}
+#found{
+  border: 1.5px solid #b0b0b0;
+  width: 350px;
+  text-align: center;
+  justify-content: center;
+  cursor: pointer;
+
+}
+#bar{
+  display: inline-block;
+  border: 1.5px solid #b0b0b0;
+  border-bottom: none;
+  border-top: none;
+  border-left: none;
+  width: 100px;
+  height: 30px;
+  margin: 5px;
+  line-height: 25px;
+}
