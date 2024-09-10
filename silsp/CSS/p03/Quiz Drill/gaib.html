@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>회원 가입</title>
+    <link rel="stylesheet" href="style/style.css" />
+  </head>
+  <body>
+    <div id="wrap">
+      <header>
+        <h1>회원 가입</h1>
+      </header>
+      <hr />
+
+      <form>
+        <div id="indInfo">
+          <!--div.indInfo*6>label>span+span>input-->
+          <div class="indInfo">
+            <label>
+              <span class="req">이메일</span>
+              <span><input type="text" /></span>
+            </label>
+          </div>
+          <div class="indInfo">
+            <label>
+              <span class="req">아이디</span>
+              <span><input type="text" /></span>
+            </label>
+            <sapan class="hintMsg">
+              (영문소문자/숫자,4~16자)
+            </sapan>
+            
+          </div>
+          <div class="indInfo">
+            <label>
+              <span class="req">비밀번호</span>
+              <span><input type="text" /></span>
+            </label>
+            <sapan class="hintMsg">
+              (영문 대소문자/숫자/특수문자 중 2가지 이상 조합,10~16자)
+            </sapan>
+          </div>
+          <div class="indInfo">
+            <label>
+              <span class="req">비밀번호 확인</span>
+              <span><input type="text" /></span>
+            </label>
+          </div>
+          <div class="indInfo">
+            <label>
+              <span class="req">이름</span>
+              <span><input type="text" /></span>
+            </label>
+          </div>
+          <div class="indInfo" id="phone">
+            <label>
+              <span class="req">휴대전화 </span>
+              <span>
+                <select>
+                  <option>010</option>
+                  <option>011</option>
+                  <option>017</option>
+                  </select>-
+                  <input type="phone" maxlength="4">-
+                  <input type="phone" maxlength="4">
+              </span>
+            </label>
+          </div>
+        </div>
+        <!--개인정보 영역-->
+        <div id="agreeArea"></div>
+          <div id="wholeAgree">
+            <input type="checkbox" id="chkAll">
+            <h2>전체동의</h2>
+            <span>
+              이용약관 및 개인정보수집 및 이용쇼핑정보 수신(선택)에 모두 동의합니다.
+            </span>
+          </div>
+          <hr>
+          
+          <div class="agreeChkSection">
+            <label>
+            <input type="checkbox"> 
+            <span></span>
+               </div>
+            </label>
+          <div class="agreeChkSection">
+            <input type="checkbox" name="" id="">
+            <span></span></div>
+          <div class="agreeChkSection">
+            <input type="checkbox" name="" id="">
+            <span></span></div>
+
+
+
+
+
+
+
+
+        <!--약관동의-->
+        <div id="btnAre">
+          <button>회원가입</button>
+        </div>
+      </form>
+    </div>
+  </body>
+</html>

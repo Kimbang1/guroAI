@@ -1,0 +1,22 @@
+@charset "UTF-8";
+/*body>div#wrap{
+
+}*/
+#wrap > div#elixers {
+  width: 250px;
+  border: 2px solid #007e7e;
+  padding: 0 20px 20px;
+  margin-left: 40px;
+  text-align: center;
+  font-size: 14.9px;
+  background-image: url(../images/cocktail.gif);
+  background-size: 100px;
+  background-repeat: repeat-x;
+}
+
+footer {
+  font-size: 14px;
+}
+h3 {
+  color: #a8787f;
+}

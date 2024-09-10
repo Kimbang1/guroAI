@@ -1,0 +1,84 @@
+@charset "UTF-8";
+*{
+  /*아스트리스트,별표
+  글로벌 선택자*/
+
+  box-sizing: border-box;
+  
+}
+div#wrap{
+  width: 600px; 
+  padding: 10px;
+  border:2px solid#000;
+  margin: 20px auto;
+}
+h1{
+  text-align: center;
+}
+
+form{
+  padding: 10px; 
+   border: 1px solid #000;
+  }
+   
+/*div#indInfo 개인정보 영역 시작*/
+div.indInfoItem{
+  border-bottom: 1px solid #aaa;
+  padding-bottom :15px;
+}
+div#divInfo div.indInfo>label{
+  display: flex;
+  margin-top: 10px;
+}
+div#divInfo div.indInfo>label>span{
+  /* border: 1px solid #08f;   */
+  display: inline-block;
+}
+div#divInfo div.indInfo>label>span:nth-child(1){
+  width: 180px;
+  padding-top:4px;
+}
+div#divInfo div.indInfo>label>span:nth-child(2){
+  flex: 1;  /*나머지 영역 모두 차지*/
+}
+div#divInfo.indInfo span:nth-child(1) input[type=text]{
+  width: 100%;
+  padding: 8px 14px;
+}
+/*/ 필수(Required)영역 작업 시작 /*/
+.req::after{
+  content: " *";
+  color: blue;
+  font-size: 21px;
+  font-weight: bold;
+  margin-left: 6px;
+  display: inline-block;
+  transform: transY(4px);
+
+}
+/* /필수영역 작업 끝 /*/
+
+/*div#indInfo 개인정보 영역 끝*/
+/*버튼영역*/
+div#btnAre{
+  text-align: center;
+}
+#btnAre button{
+  color: #fff;
+  font-size: 17px;
+  font-weight: bold;
+  width: 190px;
+  line-height: 54px;
+  border: none;
+  background-color: #000;
+}
+#btnAre button:hover{
+  color: #ddd;
+  cursor: pointer;
+  background-color: rgba(0,0,0,0.85);
+}
+#indInfo span.hintMsg{
+  font-size: 13px;
+  margin-left: 180px;
+  border: 1px solid #f80
+}
