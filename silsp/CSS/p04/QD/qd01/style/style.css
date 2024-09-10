@@ -1,0 +1,83 @@
+@charset "UTF-8";
+@import url(<linkrel="preconnect"href="https://fonts.googleapis.com"><linkrel="preconnect"href="https://fonts.gstatic.com"crossorigin><linkhref="https://fonts.googleapis.com/css2?family=Heebo:wght@100..900&display=swap"rel="stylesheet">);
+/* CSS 리셋(초기화 작업) */
+/*  *{
+      color: #333
+      padding :0;
+      margin:0;
+      box-sizing: border- box;}*/
+
+* {
+  color: #333;
+  padding: 0;
+  margin: 0;
+  box-sizing: border- box;
+}
+
+div#wrap {
+  border: 3px solid #97d1f0;
+  width: 967px;
+  margin: 30px;
+}
+/* 이미지와 제목 작업 시작*/
+.main_image {
+  background-image: url("../image/bg.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 283px;
+  width: 967px;
+}
+h1 {
+  margin-left: 10px;
+  font-size: 80px;
+  color: rgb(253, 253, 0);
+  font-family: "Heebo", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+}
+
+/* 이미지와 제목 작업 끝*/
+#markup {
+  margin: 0 auto;
+  background-color: #006b00;
+  display: flex;
+  justify-content: space-around;
+}
+li {
+  display: inline-block;
+  color: #fff;
+  list-style-type: none;
+  margin: 10px;
+  cursor: pointer;
+}
+
+div#main {
+  display: flex;
+}
+div#image {
+  margin: 10px;
+  box-sizing: content-box;
+  background-color: #e2ffe3;
+  border: 4px solid #e2ffe3;
+}
+
+#footter {
+  height: 80px;
+  background-color: #08211e;
+  padding: 10px;
+}
+p {
+  margin: 10px;
+}
+#p1 {
+  font-style: italic;
+}
+#footter > p {
+  text-align: center;
+  color: #fff;
+}
+h2,
+h3 {
+  padding: 10px;
+}
