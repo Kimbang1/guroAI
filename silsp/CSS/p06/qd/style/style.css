@@ -1,0 +1,109 @@
+@charset "UTF-8";
+@import url(/style/style_Reset.css);
+div#wrap {
+  background-image: url(/image/background.png);
+  width: 1160px;
+  background-size:100% 100%; /*중요!!!!*/
+  border: 3px solid #bcbcbc;
+  padding: 0 40px 40px;
+}
+/* 배경작업 */
+#back {
+  background-color: #fff;
+  width: 1060px;
+  border: 2px solid #bcbcbc;
+}
+/* 상단 로고작업 */
+div#head {
+  background-image: url(/image/topbg.png);
+  background-repeat: no-repeat;
+  width: 1060px;
+  height: 195px;
+}
+/* nav영역 작업 */
+ul#menu {
+  list-style: none;
+  background-color: #c91b3c;
+  width: 1060px;
+  padding: 5px;
+}
+.int:hover{
+  background-color: rgba(255,255,255,0.6);
+}
+.int {
+  display: inline;
+  cursor: pointer;
+  margin: 5px;
+  color: #fff;
+}
+/* 소개글 영역 */
+#main {
+  display: flex;
+  margin: 40px 0 0 0;
+}
+#mp {
+  margin: 20px 60px;
+}
+#mp > p {
+  color: #ec6e6f;
+}
+#intro > h4 {
+  text-align: center;
+}
+
+/* 고객상담 안내작업 */
+#disp {
+  display: flex;
+  justify-content: space-between;
+  margin: 10px;
+}
+#title {
+  border: 1px solid #ec6e6f;
+  background-color: #ec6e6f;
+  color: aliceblue;
+}
+#int1 {
+  padding: 20px;
+}
+li {
+  line-height: 20px;
+}
+/* 꽃사진 들어간 배너 */
+#s,#t,#fo {
+  border: 1px solid #000;
+  border-radius: 10%;
+  width: 200px;
+  height: 200px;
+  position: relative;
+}
+
+#sagin {
+  width: 170px;
+  height: 200px;
+  border-radius: 10%;
+}
+.textb {
+  display: inline;
+  text-align: right;
+  background-color: rgba(255,255,255,0.6);
+  width: 100%;
+  height: 44px;
+  position: absolute;
+  left: 0;
+  top: 60%;
+}
+
+/* footer작업 */
+#footer {
+  border: 1px solid #bcbcbc;
+  border-left: none;
+  border-right: none;
+  padding: 10px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.int2 {
+  display: inline-block;
+}
+

@@ -1,0 +1,45 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@400;700;800&display=swap');
+* {
+  color: #222; /*기본글색상*/
+  font-family: "NanumGothic", sans-serif;
+  text-decoration: none; /*밑줄제거*/
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+/*body { background-color:#fff; } 배경색이적용될때사용함*/
+/* 구글 웹 폰트 사용법 */
+/* 
+선택자.nanum-gothic-regular { font-family: "Nanum Gothic", sans-serif; font-weight: 400; 레귤러}
+
+선택자.nanum-gothic-bold { font-family: "Nanum Gothic", sans-serif; font-weight: 700; 진한글꼴}
+
+선택자.nanum-gothic-extrabold { font-family: "Nanum Gothic", sans-serif; font-weight: 800; 가장진한 글꼴}*/
+
+a:link {
+  color: #333;
+} /*a요소에서href속성이적용된텍스트의색상*/
+a:visited {
+  color: #333;
+} /*href속성값이적용된링크를방문한것*/
+a:hover {
+  color: #333;
+} /*하이퍼텍스트에마우스를위치하면색상이#333으로변경됨*/
+a:active {
+  color: #333;
+} /*:hover상태에서마우스왼쪽버튼을누르는순간적용*/
+img {
+  /*이미지요소옆의요소는이미지의세로기준윗쪽정렬됨*/
+  vertical-align: top;
+}
+ul {
+  /*불릿기호표시하지않음*/
+  list-style: none;
+}
+.dFlex {
+  /*HTML요소의속성으로플렉스레이아웃적용*/
+  display: flex;
+}
+/* div#wrap { width: 640px; padding: 10px; border: 4pxsolid#aaa; border-radius: 4px; margin: 10pxauto; } */
+/*/////////////////////////CSS리셋파일끝/////////////////////////*/

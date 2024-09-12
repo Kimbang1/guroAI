@@ -1,0 +1,7 @@
+@charset "UTF-8";
+@import url(style_Reset.css);
+
+
+#parent{
+  border: 3px solid #afafaf
+}

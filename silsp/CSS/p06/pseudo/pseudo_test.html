@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>슈도 클래스/슈도 엘리먼트</title>
+  <style>
+    #wrap{
+      width: 500px;
+      padding: 20px;
+      border: 3px solid #08f;
+      margin: 30px auto;
+    }
+   
+    
+    ul>li:nth-child(1){
+      font-size: 20px;
+    }
+    ul>li:nth-child(2n){
+      color: #f80;
+    }
+    ul>li:nth-child(2n+1){
+      font-weight: bold;
+      font-style: italic;
+      text-decoration: underline;
+    }
+    .pseudo{
+      width: 100%;
+      height: 120px;
+      border: 3px solid #000;
+    
+      position: relative;
+    }
+    ul>li:last-child{
+      color: #5a5;
+      text-indent: 50px;  /*들여쓰기*/
+      margin-left: 20px;
+    }
+    p{
+      width: 80%;
+      color: #08f !important;
+      font-size: 24px;
+      padding: 10p;
+      margin: 0;
+      text-decoration: underline;
+      text-align: center;
+      border: 3px solid ;
+
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      transform: translate(-50%,-50%);
+    }
+    
+    p::after{
+      content: "후치(postfix)";
+      color: lightsalmon;
+      font-size: 30px;
+      font-weight: bold;
+      /* text-decoration: none !important; */
+      /* !important는  다른 CSS가 적용이 되었더라도
+      임포턴트로 적용된 CSS가 우선 적용된다. */
+    }
+    p::before{
+      content: "전치(prefix)";
+      color: purple;
+      font-size: 30px;
+      font-weight: bold;
+      /* text-decoration: none !important; */
+      /* !important는  다른 CSS가 적용이 되었더라도
+      임포턴트로 적용된 CSS가 우선 적용된다. */
+    }
+
+    div#pseudoCls{
+      visibility: visible;
+    }
+    div#pseudoEle{
+      visibility: visible;
+    }
+  </style>
+</head>
+<body>
+  <div id="wrap">
+    <h1>슈도 클래스(가상선택자)</h1>
+      <div id="pseudoCls" class="pseudo">
+        <ul>
+          <li>내용1</li>
+          <li>내용2</li>
+          <li>내용3</li>
+          <li>내용4</li>
+        </ul>
+
+      </div>
+      <hr>
+      <h1>슈도 엘리먼트(가상 요소)</h1>
+      <div id="pseudoEle" class="pseudo">
+       <p>/p태그/</p>
+      </div>
+
+  </div>
+  
+</body>
+</html>

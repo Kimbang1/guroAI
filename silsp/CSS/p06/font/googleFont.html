@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>구글 (웹)폰트</title>
+  
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@400;700;800&display=swap');
+      @font-face {
+        font-family: "nanum-gothic_reg";
+        src: url(resource/NanumGothic-Regular.ttf); /*	woff,	otf	파일도	가능함	*/
+      }
+      div#wrap {
+        width: 400px;
+        padding: 20px;
+        border: 3px solid #aaa;
+        margin: 30px auto;
+      }
+      /* 구글 웹 폰트 사용법 */
+      /* 
+      선택자.nanum-gothic-regular {
+        font-family: "Nanum Gothic", sans-serif;
+        font-weight: 400;
+        레귤러
+        }
+
+선택자.nanum-gothic-bold {
+  font-family: "Nanum Gothic", sans-serif;
+  font-weight: 700;
+  진한글꼴
+}
+
+선택자.nanum-gothic-extrabold {
+  font-family: "Nanum Gothic", sans-serif;
+  font-weight: 800;
+  가장진한 글꼴
+} */
+
+      div.fontCls {
+        font-size: 30px;
+        border: 3px solid #08f;
+      }
+      div#fontApply {
+        font-family: "Nanum Gothic", sans-serif;
+        font-weight: 700; /* 400, 700, 800나눔고딕 진하기 표현*/
+      }
+    </style>
+  </head>
+  <body>
+    <div id="wrap">
+      <h1>구글웹폰트</h1>
+      <hr />
+
+      <h2>나눔고딕 폰트 적용</h2>
+      <div id="fontApply" class="fontCls">자두ABC123!@#$</div>
+
+      <h2>폰트 미적용</h2>
+      <div id="noFont" class="fontCls">자두ABC123!@#$</div>
+    </div>
+  </body>
+</html>
