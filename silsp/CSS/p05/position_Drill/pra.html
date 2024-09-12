@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+  
+    div{width: 100px;height: 100px; background-color: aquamarine;
+   
+    border: 1px solid #000;
+    }
+    div#a{ position:relative;
+    left: 100px;
+    top: 100px;}
+    div#c{ position:absolute;
+    left: 100px;
+    top: 100px;}
+    div#d{ position:fixed;
+    left: 100px;
+    top: 100px;}
+    div#b{
+      margin: 200px;
+      height: 900px;
+      width: 900px;
+      background-color: bisque;
+    }
+    </style>
+</head>
+<body>
+  <div id="b">
+<div id="c">1</div>
+<div id="a">2</div>
+<div id="d">3</div>
+</div>
+</body>
+</html>

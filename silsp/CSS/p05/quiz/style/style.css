@@ -1,0 +1,33 @@
+@charset "UTF-8";
+* {
+ /* color: #222;
+  text-decoration: none;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box; */
+
+}
+div#wrap {
+  /* width: 900px;
+  border: 2px solid #000; */
+
+}
+li {
+  list-style: none;
+}
+
+#mainmenu {
+  /* border: 1px solid #08f;
+  border-left: none;
+  border-right: none;*/
+} 
+
+ul#mainmenu>li.main1 {
+  width: 100px;
+  text-align: center;
+  padding: 6px 8px;
+  border: 1px solid #08f;
+  background-color: #08f;
+  display: inline-block;
+}
+

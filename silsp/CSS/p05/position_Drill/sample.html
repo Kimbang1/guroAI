@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>포지션 레이아웃</title>
+  <style>
+    div.divCls{
+      width: 100px;
+      height:100px;
+      font-size: 30px;
+      text-align: center;
+      line-height: 100px;
+      border : 5px solid #000;
+      margin: 30px;
+    }
+
+    #div1{
+      background-color: aqua;
+      position: absolute;
+      z-index: -10;
+     
+    }
+
+    #div2{
+      background-color: rgb(255, 94, 0);
+      margin-left: 50px;
+      position: absolute;
+      z-index: -99;
+    }
+
+    #div3{
+      background-color: rgb(0, 255, 76);
+      margin-left: 80px;
+      position: absolute;
+      z-index: -5;
+    }
+
+  </style>
+</head>
+<body>
+  <div id="wrap">
+    <h1>2차원 공간유지/소멸</h1>
+    <hr>
+    <div id="div1"class="divCls">Div1</div>
+    <div id="div2"class="divCls">Div2</div>
+    <div id="div3"class="divCls">Div3</div>
+  </div>
+  
+</body>
+</html>

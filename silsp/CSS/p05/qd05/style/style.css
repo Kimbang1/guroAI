@@ -1,0 +1,75 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800; 1,300..800&display=swap");
+#wrap {
+  margin: 100px;
+  border: 2px solid #000;
+  width: 1100px;
+  background-color: #e8d8bd;
+}
+
+#head {
+  background-color: #6b604c;
+}
+#nav {
+  background-image: url(../image/background.gif);
+  margin: 10px;
+}
+#nbg {
+  padding: 0;
+  list-style: none;
+}
+li:hover {
+  background-color: rgba(0, 0, 0, 0.2);
+}
+a {
+  color: #b6615c;
+  text-decoration: none;
+}
+
+li {
+  cursor: pointer;
+  padding: 10px;
+  display: inline-block;
+  color: #b6615c;
+  font-weight: bold;
+}
+#maindis {
+  display: flex;
+}
+#left {
+  width: 300px;
+  padding: 10px;
+  margin: 5px;
+  background-image: url(/image/background.gif);
+}
+#main {
+  width: 600px;
+  padding: 10px;
+  margin: 5px;
+  background-image: url(/image/background.gif);
+}
+
+#aside {
+  width: 300px;
+  padding: 10px;
+  margin: 5px;
+  background-image: url(/image/background.gif);
+  text-align: center;
+}
+#footer {
+  padding: 10px;
+  background-image: url(/image/background.gif);
+  height: 50px;
+  text-align: center;
+  line-height: 0;
+}
+h1 {
+  font-size: 25px;
+  font-family: "Open Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 800;
+  font-style: normal;
+}
+#end {
+  margin: 0 0 0 300px;
+}
