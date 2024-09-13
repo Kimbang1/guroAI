@@ -1,0 +1,21 @@
+@charset "UTF-8";
+
+div#warp{
+  width: 330px;
+  padding: 20px;
+  border: 1px solid #000;
+}
+div#ref{
+  padding: 20px;
+  border: 1px solid #000;
+  margin-bottom: 10px;
+}
+button{
+  margin-bottom: 10px;
+  cursor: pointer;
+}
+div#output{
+  height: 50px;
+  border: 1px solid #000;
+}
+
