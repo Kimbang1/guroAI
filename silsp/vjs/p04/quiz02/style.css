@@ -1,0 +1,31 @@
+@charset "UTF-8";
+#wrap{
+  border: 2px solid #000;
+  box-sizing: border-box;
+  border-radius: 10px;
+  height: 350px;
+  width: 250px;
+  justify-items: center;
+  padding: 20px;
+}
+.view{
+  display: flex;
+  justify-content: space-between;
+  line-height: 20px;
+  padding: 5px 0;
+}
+#Products,#price,#count{
+  text-align: center;
+  width: 130px;
+  height: 25px;
+}
+button{
+  width: 100%;
+  font-size: 20px;
+  font-weight: bold;
+  justify-items: center;
+}
+fieldset{
+  height: 50px;
+}
+

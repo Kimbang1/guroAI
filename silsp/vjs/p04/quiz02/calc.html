@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>결제액</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div id="wrap">
+      <h1>결제액 계산</h1>
+      <hr />
+      <div class="view">
+        <label for="Products">상품선택</label>
+        <select id="Products">
+          <option value="choice">-선택-</option>
+          <option value="과일">과일</option>
+          <option value="빵">빵</option>
+          <option value="음료">음료</option>
+        </select>
+      </div>
+
+      <div class="view">
+        <label for="price">가격선택</label>
+        <select id="price">
+          <option value="choice">-선택-</option>
+          <option value="1500">1500</option>
+          <option value="2000">2000</option>
+          <option value="3000">3000</option>
+        </select>
+      </div>
+
+      <div class="view">
+        <label for="count">수량</label>
+        <select id="count">
+          <option value="choice">-선택-</option>
+          <option value="1">1</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+          <option value="4">4</option>
+          <option value="5">5</option>
+        </select>
+      </div>
+
+      <button type="button" onclick="Calculate()">계산하기</button>
+      <hr />
+      <fieldset>
+        <legend>결제액</legend>
+        <span id="res"></span>
+      </fieldset>
+    </div>
+    <script>
+      function Calculate() {
+        let Products = document.querySelector("#Products").value;
+        let price = document.querySelector("#price").value;
+        let count = document.querySelector("#count").value;
+
+        if (Products === "choice" || price === "choice" || count === "choice") {
+          alert("모든 항목을 선택해 주세요.");
+          return;
+        }
+
+        let gop = price * count;
+        let res = `${Products} ${count}개: ${gop}원`;
+        // let res = Products + count + "개" + gop + "원"
+        document.querySelector("#res").innerText = res;
+      }
+    </script>
+  </body>
+</html>

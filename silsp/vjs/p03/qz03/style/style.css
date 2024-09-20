@@ -1,0 +1,26 @@
+@charset "UTF-8";
+#wrap{
+  border: 1px solid #000;
+  width: 300px;
+  height: 250px;
+  padding: 10px;
+  margin: 80px;
+}
+
+#box{
+  width: 300px;
+  align-items: center;
+  line-height: 10px;
+  margin-bottom: 20px;
+}
+input{
+  width: 60px;
+}
+button{
+width: 200px;
+height: 30px;
+}
+
+#result{
+  border: 1px solid #000;
+}

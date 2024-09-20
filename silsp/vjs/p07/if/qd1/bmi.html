@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>QD1</title>
+  <link rel="stylesheet" href="style/style.css">
+</head>
+<body>
+  <div id="wrap">
+    <h1>BMI</h1>
+    <hr>
+    <!-- emmet : ul#insArea>li*2>label>span{()}+input:t -->
+    <ul id="insArea">
+      <li>
+        <label>
+          <span>몸무게(kg)</span>
+          <input type="text" id="weight" autofocus>
+        </label>
+        </li>
+      <li>
+        <label>
+          <span>키(cm)</span>
+          <input type="text" id="height" >
+        </label>
+        </li>
+    </ul>
+    <div id="btnArea">
+      <button type="button" id="resBtn">결과확인</button>
+      <button type="button" id="styleBtn">CSS 적용</button>
+    </div>
+    <div id="msgArea">
+      <p>
+        당신의 BMI 지수는
+        <span id="bmiIndex">00</span>
+        입니다.
+      </p>
+      <p id="chkBmiMsg"></p>
+    </div>
+
+  </div>
+  <script src="script/script.js"></script>
+</body>
+</html>

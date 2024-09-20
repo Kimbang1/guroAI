@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DOM(=문서객체 모델)</title>
+</head>
+<body>
+  <div id="wrap">
+    <p>1</p>
+    <span>2</span>
+    <p class="testp">3</p>
+    <div>4</div>
+    <a class="testp">5</a>
+    
+
+
+  </div>
+  <script>
+    const dom = document.querySelector(".testp");
+    dom.innerHTML = "<u>가나다</u>";
+    // const dom = document.getElementsByClassName("testp");
+  
+    // dom[0].style.fontSize="40px";
+    // dom[0].style.color="#f80";
+    // dom[0].style.border="3px solid #5a5";
+    
+  </script>
+</body>
+</html>

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>자료확인형</title>
+    <link rel="stylesheet" href="styel/style.css" />
+  </head>
+  <body>
+    <div id="wrap">
+      <h1>자료형 확인</h1>
+      <hr />
+
+      <label
+        >입력
+        <input type="text" id="text" />
+      </label>
+      <button type="button" onclick="Resources()">확인</button>
+      <hr />
+
+      <fieldset>
+        <legend>자료형</legend>
+        <span id="res"></span>
+      </fieldset>
+    </div>
+    <script>
+      function Resources() {
+        let data = document.querySelector("#text").value;
+        let res = typeof data;
+        document.querySelector("#res").innerText = res;
+      }
+    </script>
+  </body>
+</html>

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>퀴즈3</title>
+  </head>
+  <body>
+    <h1>Quiz 3</h1>
+    <script>
+      let number = prompt("숫자를 입력하세요.");
+      // console.log("number :" + number);
+
+      if (number == "" || number == null) {
+        console.log("재실행 후 값을 입력해주세요.");
+      } else if (isNaN(number)) {
+        console.log("숫자만 입력해주세요.");
+      } else if (1 >= number || number >= 100) {
+        console.log("범위외의 숫자가 입력되었습니다.\n");
+        console.log("2\~100 사이의 값을 입력하세요.");
+      } else {
+        console.log("입력 값" + number + "의 약수");
+        
+        // number = Number(number);
+        let ary = [];
+        let cnt = 0;
+        let txt = "";
+        
+        for (let i = 1; i <= number; i++) {
+          if (number % i == 0) {
+            ary[cnt++] = i;
+          }
+        }
+        console.log(ary.toString());
+      }
+            console.log("\nEnd.");
+        </script>
+  </body>
+</html>

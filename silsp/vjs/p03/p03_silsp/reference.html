@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JS의 HTML 요소참조</title>
+    <style>
+      p#test{
+        width: 400px;
+        height: 100px;
+        padding: 10px;
+        border: 1px solid #08f;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>버튼을 클릭하면 요소를 참조할 수 있습니다.</h1>
+
+    <button onclick="myFunction()">Try it</button>
+    <p><strong>note:</strong>참조 결과가 아래에 출력됩니다</p>
+
+    <div id="demo"></div>
+    <script>
+      function myFunction(){
+        document.getElementById("demo").outerHTML="<p id=test><b>참조되었습니다!</b></p>";
+      }
+    </script>
+  </body>
+</html>

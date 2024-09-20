@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Quiz dril</title>
+    <style>
+      #wrap {
+        border: 1px solid #000;
+        width: 300px;
+        display: flex;
+        flex-direction: column;
+        justify-items: center;
+      }
+      #input {
+        display: flex;
+        flex-direction: column;
+        padding: 10px;
+        margin: 10px;
+      }
+      #button {
+        margin: 10px;
+        cursor: pointer;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="wrap">
+      <div id="input">
+        <span>몸무게(kg)<input id="kg" type="text" /></span>
+        <span>키(cm)<input id="cm" type="text" /></span>
+      </div>
+      <div id="button">
+        <button onclick="res()">결과확인</button>
+        <button onclick="CSS">CSS 적용</button>
+      </div>
+    </div>
+    <p>
+      당신의 BMI 지수는 <span id="end">00</span> 입니다.
+
+      <div id="chkB"></div>
+
+      <script>
+        function res() {
+          let data1 = Number(document.querySelector("#kg").value);
+          let data2 = Number(document.querySelector("#cm").value);
+          let data3 = (data1 / (data2 / 100) ** 2).toFixed(1);
+          // console.log(data1);
+          // console.log(data2);
+          // console.log(data3);
+          document.querySelector("#end").innerText = data3;
+
+          let chkMsg="";
+          if(data3 >= 25){
+            chkMsg = "과"
+          }else  if(data3 >= 20){
+            chkMsg = "중"
+          }else{
+            chkMsg="저"
+          }
+          console.log(chkMsg);
+          document.querySelector("#chkB").innerText = chkMsg + "체중 입니다."; 
+        }
+      </script>
+    </p>
+  </body>
+</html>

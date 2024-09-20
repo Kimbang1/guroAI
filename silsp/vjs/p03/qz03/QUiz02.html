@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style/style.css" />
+  </head>
+  <body>
+    <div id="wrap">
+      <h2>Quiz02.</h2>
+      <h2>센티미터=> 인치 단위변환</h2>
+
+      <div id="box">
+        <label>
+          <span>1.센티미터 입력</span>
+          <input type="text" id="centi" placeholder="ex.70" />
+        </label>
+        <br />
+        <span>2.</span>
+        <button onclick="fnCalc()" id="btn">인치 변환</button>
+      </div>
+
+      <div id="result">
+        <span>결과 :</span>
+        <span></span>
+      </div>
+    </div>
+    <script>
+      function fnCalc() {
+        // document.getElementById("btn").getAttribute()
+        let centi = document.querySelector("input#centi").value;
+
+        let res = centi / 2.54;
+        res = centi + "cm =" + res.toFixed(1) + "inch";
+
+        document.querySelector("div#result>span:last-child").innerText = res;
+        console.log("centi :" + centi);
+      }
+    </script>
+  </body>
+</html>
