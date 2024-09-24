@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>천단위 구분쉼표 적용</title>
+    <style>
+      #wrap {
+        width: 400px;
+        border: 2px solid #aaa;
+        border-radius: 10px;
+        padding: 10px;
+        text-align: center;
+      }
+      button{
+        cursor: pointer;
+      }
+      #inner{
+        text-align: center;
+        padding: 10px;
+      }
+      #inner input[type=text]{
+        width: 120px;
+        font-size: 17px;
+        font-weight: bold;
+        padding: 3px 8px 4px;
+      }
+      #inner button{
+        font-size: 18px;
+        font-weight: bold;
+        padding: 3px 6px;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="wrap">
+      <h1>천단위 구분쉼표 적용</h1>
+      <hr />
+      <div id="inner">
+        <label>
+        <span>숫자 입력</span>
+        <input type="text" id="num" />
+        </label>
+        <button type="button" onclick="fnComma()">천단위 쉼표 적용</button>
+        <!-- <div id="res"></div> -->
+      </div>
+    </div>
+    <script>
+      function fnComma(){
+        let num = document.querySelector("#num").value;
+        let res=parseInt(num).toLocaleString();
+        document.querySelector("#num").value=res;
+      }
+      // let dom = document.querySelector("button");
+      // dom.addEventListener("click",fnComma);
+      
+      // function tolocal() {
+      //   const num = document.getElementById("#num").value;
+      //   const text = Number(num).tolocaleString();
+      //   document.querySelector("#res").innerHTML = text;
+      // }
+    </script>
+  </body>
+</html>

@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <h1>이벤트 객체의 이벤트 코드</h1>
+  
+  <input type="text" onkeypress="myFunc(event)">
+  <script>
+    function myFunc(ev){
+      let code = event.keyCode;
+      console.log("키코드: " + code)
+    }
+  </script>
+</body>
+</html>
