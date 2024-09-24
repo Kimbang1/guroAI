@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Console</title>
+  </head>
+  <body>
+    <h1>디버깅 관련 Api</h1>
+
+    <script>
+      alert("작업 처리 시간을 체크합니다.");
+
+      console.time("chkTime01");
+
+      for (let i = 0; i < 60; i++) {
+        console.log("ok");
+      }
+
+      console.timeEnd("chkTime01");
+      // let num = prompt("양수만 입력하세요");
+      // if (num >= 0) {
+      //   console.log("입력하신 숫자:" + num);
+      //   console.assert(!(num == 0), "0은 안됩니다.");
+      // } else if (num < 0) {
+      //   console.log("양수만 됩니다.");
+      // }
+    </script>
+  </body>
+</html>

@@ -1,0 +1,79 @@
+@charset "UTF-8";
+
+div#wrap {
+  border: 3px solid #1f8fe6;
+  border-radius: 10px;
+  width: 600px;
+  margin: 10px auto;
+  padding: 20px;
+}
+div#title {
+  border-bottom: 3px solid #aaa;
+}
+div.line {
+  border-bottom: 1px solid #000;
+  padding: 10px 0;
+  > span {
+    width: 120px;
+    display: inline-block;
+    text-align: right;
+    font-weight: bold;
+  }
+}
+/* 회원가입 취소 버튼 작업 시작 */
+#btnbox {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  > button {
+    margin: 10px 0 0 0;
+    background-color: #999999;
+    border: 1px solid white;
+    color: aliceblue;
+    width: 150px;
+    height: 40px;
+    cursor: pointer;
+  }
+}
+input {
+  width: 100px;
+  height: 25px;
+}
+select {
+  width: 100px;
+  height: 30px;
+}
+/* 회원가입 취소 버튼 작업 끝 */
+
+/* 팝업 창 작업 시작 */
+div#popup {
+  border: 3px solid #1f8fe6;
+  border-radius: 10px;
+  width: 300px;
+  height: 90%;
+  margin: 20px 10px;
+  padding: 20p;
+  text-align: center;
+  > hr {
+    width: 260px;
+  }
+}
+#pinput {
+  width: 200px;
+  border: 3px solid #000;
+  border-radius: 5px;
+  margin: 10px;
+}
+lable {
+  font-size: 15px;
+}
+#shutdown {
+  display: flex;
+  justify-content: center;
+  /* gap: 10px; */
+  > button {
+    width: 100px;
+    margin: 10px;
+  }
+}
+/* 팝업창 작업 끝*/

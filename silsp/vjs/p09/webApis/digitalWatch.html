@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>디지털 시계</title>
+    <style>
+      * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+      }
+      div#wrap {
+        width: 300px;
+        text-align: center;
+        padding: 10px;
+        border: 3px solid #08f;
+        border-radius: 6px;
+        margin: 20px auto;
+      }
+      hr {
+        margin: 10px 0;
+      }
+      main#main {
+        width: 260px;
+        margin: 0 auto;
+        display: flex;
+        justify-content: space-around;
+      }
+      #main div {
+        font-size: 20px;
+        font-weight: bold;
+      }
+      #main button {
+        font-size: 20px;
+        padding: 2px 6px;
+        cursor: pointer;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="wrap">
+      <h1>전자시계</h1>
+      <hr />
+      <main id="main">
+        <div id="clockArea">오전 11:48:35</div>
+        <div id="btnArea">
+          <button type="button" onclick="fnTimeStart()">Start</button>
+          <button type="button" onclick="fnTimeStop()">Stop</button>
+        </div>
+      </main>
+    </div>
+
+    <script>
+      let tm;
+
+      let now = new Date();
+      let ampm = "";
+      let timeRes = fnAmPm(addZero(now.getHours())) + ":";
+      timeRes += addZero(now.getMinutes()) + ":";
+      timeRes += addZero(now.getSeconds());
+      const dom = document.querySelector("#clockArea");
+      dom.innerText = timeRes;
+
+      function fnTimePlaying() {
+        now = new Date();
+        timeRes = fnAmPm(addZero(now.getHours())) + ":";
+        timeRes += addZero(now.getMinutes()) + ":";
+        timeRes += addZero(now.getSeconds());
+        dom.innerText = timeRes;
+      }
+      function fnTimeStart() {
+        tm = setInterval(fnTimePlaying, 1000);
+      }
+      function fnTimeStop() {
+        clearInterval(tm);
+      }
+      function addZero(p) {
+        let res = "";
+        if (p < 10) {
+          res = "0" + p;
+        } else {
+          res = p;
+        }
+        return res;
+      }
+      function fnAmPm(p) {
+        let hour = parseInt(p);
+
+        let res = "오후 " + addZero(hour);
+        if (hour < 12) {
+          res = "오전 " + addZero(hour);
+        }
+        return res;
+      }
+
+      // const timediv = document.getElementById("time");
+      // function getTime() {
+      //   let now = new Date();
+      //   let hour = now.getHours();
+      //   let min = now.getMinutes();
+      //   let sec = now.getSeconds();
+
+      //   hour = hour < 10 ? "0${hour}" : hour;
+      //   min = min < 10 ? "0${min}" : min;
+      //   sec = sec < 10 ? "0${sec}" : sec;
+
+      //   timediv.textContent = `${hour}:${min}:${sec}`;
+      // }
+      // getTime();
+      // setInterval(getTime, 1000);
+    </script>
+  </body>
+</html>
