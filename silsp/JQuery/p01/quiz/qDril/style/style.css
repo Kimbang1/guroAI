@@ -1,0 +1,48 @@
+@charset "UTF-8";
+@import url(style_Reset.css);
+
+div#wrap {
+  width: 300px;
+  padding: 20px;
+  border: 4px solid #08f;
+  border-radius: 5px;
+  margin: 10px auto;
+}
+h1 {
+  text-align: center;
+}
+hr{
+  margin: 15px 0;
+}
+div#display {
+  display: flex;
+  padding: 5px;
+  justify-content: space-between;
+}
+button {
+  display: block;
+  justify-items: center;
+  width: 100px;
+  height: 40px;
+  margin: 5px 20px;
+  cursor: pointer;
+}
+#line {
+  position: relative;
+  height: 200px;
+  border: 2px solid #cf9647;
+}
+div#sp {
+  position: absolute;
+  top: 20%;
+  left: 20%;
+  translate: translate(-50%,-50%);
+  font-weight: bold;
+  text-align: center;
+  line-height: 120px;
+  width: 60%;
+  height: 60%;
+  display: block;
+  background-color: #31adab;
+  border: 1px solid #000;
+}
