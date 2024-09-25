@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style/style.css" />
+  </head>
+  <body>
+    <div id="wrap">
+      <div id="title">
+      <h1>회원가입</h1>
+      </div>
+      <div class="line">
+        <label><span>*</span>아이디</label>
+        <input type="text" id="id">
+        <button onclick="chkbox()">중복확인</button>
+      </div>
+
+      
+      <div class="line">
+        <label><span>*</span>비밀번호</label>
+        <input type="text" id="pwd"/>
+      </div>
+
+      <div class="line">
+        <label>비밀번호 확인</label>
+        <input type="password" onblur="chkpwd()" id="pwd2"/>
+        <span id="conf" ></span>
+      </div>
+      
+      <div class="line">
+        <label><span>*</span>이메일</label>
+        <input type="text" id="fdigit"/> @ <input type="text" id="inemail"/>
+       
+        <select name="email" id="eurl" onchange="change1()">
+          <option name="eurl" value="직접입력">직접입력</option>
+          <option name="eurl" value="naver.com">naver.com</option>
+          <option name="eurl" value="daum.net">daum.net</option>
+        </select>
+      </div>
+
+      <div id="btnbox">
+        <button onclick="cancel()">가입취소</button>
+        <button onclick="register()">회원가입</button>
+      </div>
+      
+    <script src="script.js"></script>
+  </body>
+</html>
