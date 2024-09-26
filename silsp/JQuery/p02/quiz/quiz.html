@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>퀴즈</title>
+  </head>  
+  <body>
+    <div id="wrap">
+      <h1>jQuery Selector Quiz</h1>
+      <p>
+        jQuery의 css( ) 메서드를 사용하여 아래의 요소 내용에 명시된 글색상을
+        적용하세요.
+      </p>
+      <hr />
+      <p id="test">id속성값 "test"를 선택자로 사용하여 브라운(brown) 색상 적용</p>
+      <p>:last() 선택자를 사용하여 로얄블루(royalblue) 색상 적용</p>
+      <ul>
+        <li>:even 선택자로 옐로우그린(yellowgreen) 색상 적용</li>
+        <li>:nth-child() 선택자로 토마토(tomato) 색상 적용</li>
+        <li>:eq() 선택자로 탄(tan) 색상 적용</li>
+      </ul>
+    </div>
+
+    <!--jQuery 라이브러리-->
+    <script src="script/jquery-3.7.1.js"></script>
+
+    <script>
+      $(function () {
+        //jQuery템플릿
+        $("p#test").css({"color": "brown"});
+        $("p:last").css({"color":"royalblue"});
+        $("li:even").css({"color":"yellowgreen"});
+        $("li:nth-child(2)").css({"color":"tomato"});
+        $("li:eq(2)").css({"color":"tan"});
+      });
+
+      
+    </script>
+  </body>
+</html>

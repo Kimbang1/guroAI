@@ -1,0 +1,127 @@
+@charset "UTF-8";
+
+div#wrap {
+  border: 2px solid #333;
+  width: 860px;
+  margin: 10px auto;
+  padding: 0 10px;
+}
+/* 상단 메인 로그인 등등 작업 */
+div#heaer {
+  margin: 10px;
+  text-align: center;
+}
+.gnb-list {
+  list-style-type: none;
+  padding: 0 0 30px;
+  margin: 0;
+  display: table;
+  width: 100%;
+}
+.gnb-list li {
+  display: table-cell;
+  padding: 10px;
+  border: 1px solid #000;
+  width: 210px;
+  text-align: center;
+}
+.gnb-list li:not(:first-child) {
+  border-left: none;
+}
+.gnb-list a {
+  text-decoration: none;
+  color: #000;
+}
+.gnb-list li a:hover {
+  color: blue;
+}
+/* 상단 메인 로그인 등등 작업 끝 */
+#main {
+  margin: 10px;
+}
+#Postt {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 15px 10px;
+}
+/* 번호,제목, 이름 날짜 작업 */
+#subbar {
+  border: 2px solid #aaa;
+  border-left: #aaa;
+  border-top: #aaa;
+  border-right: #aaa;
+  background-color: #ecf8ff;
+}
+#tb1 {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  display: table;
+  width: 100%;
+}
+#tb1 li {
+  display: table-cell;
+  padding: 10px;
+  text-align: center;
+  font-weight: bold;
+}
+li#wide {
+  width: 40%;
+}
+/* 번호,제목, 이름 날짜 작업 끝*/
+
+/* 21번 연습글 등 목록 작업 */
+.list {
+  border: 1px solid #aaa;
+  border-left: #aaa;
+  border-top: #aaa;
+  border-right: #aaa;
+  text-align: center;
+  display: flex;
+  justify-content: space-around;
+  padding: 10px 0;
+}
+.spleft {
+  text-align: left;
+  width: 30%;
+}
+/* 21번 연습글 등 목록 작업 끝*/
+
+/* 밑줄번호 제목 인풋 작업 */
+div#footer {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+}
+.horizontal-list {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+}
+.horizontal-list li {
+  margin-right: 20px;
+}
+.horizontal-list a {
+  text-decoration: none;
+  color: #000;
+}
+.horizontal-list li a:hover {
+  color: blue;
+  background-color: #aaa;
+}
+
+div#right {
+  height: 24px;
+}
+#menu {
+  height: 100%;
+}
+input {
+  height: 80%;
+}
+button {
+  height: 100%;
+  font-weight: bold;
+}
+/* 밑줄번호 제목 인풋 작업 끝*/
