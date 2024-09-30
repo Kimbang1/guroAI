@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>요소이동</title>
+    <style>
+      #wrap {
+        border: 3px solid #aaa;
+        padding: 10px;
+        border-radius: 10px;
+        text-align: center;
+      }
+      .main {
+        display: flex;
+        justify-content: space-between;
+      }
+      .mainlist {
+        text-decoration: none;
+        list-style-type: none;
+        display: flex;
+      }
+      .mainlist > li {
+        justify-content: center;
+        padding: 20px;
+      }
+      .box {
+        border: 1px solid #000;
+        padding: 10px;
+        margin: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="wrap">
+      <h1>요소 이동</h1>
+      <hr />
+
+      <main id="dFlex">
+        <div id="btn"><button id="left">&lt;</button></div>
+
+        <ul class="mainlist">
+          <li class="box">1</li>
+          <li class="box">2</li>
+          <li class="box">3</li>
+        </ul>
+
+        <div id="btn"><button id="right">&gt;</button></div>
+      </main>
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script>
+      $(function () {
+        $("#left").click(function () {
+          $("li.box:last").insertBefore("li.box:first");
+        });
+
+        $("#right").click(function () {
+          $("li.box:first").insertAfter("li.box:last");
+        });
+      });
+    </script>
+  </body>
+</html>

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>이용약관동의</title>
+    <link rel="stylesheet" href="style/styl.css" />
+  </head>
+  <body>
+    <div id="wrap">
+      <div id="headck">
+        <input type="checkbox" id="checkAll" />
+        <span
+          >이용약관 및 개인정보수집 및 이용, 쇼핑정보 수신(선택)에 모두 동의
+          합니다.</span
+        >
+      </div>
+
+      <div id="agreetilte">
+        <span>[필수]약관 동의</span>
+      </div>
+      <iframe src="if.html">
+        <!-- style="width: 100%; height: 200px; border: 1px solid #8ab1c6" -->
+      </iframe>
+      <span>이용약관에 동의하십니까?</span>
+      <input type="checkbox" class="items Required" />
+      <span>동의함 (필수)</span>
+
+      <div id="personal">
+        <iframe src="Personal.html" frameborder="1px"></iframe>
+        <span>개인정보 수집 및 이용에 동의하십니까?</span>
+        <input type="checkbox" class="items Required" />
+        <span>동의함 (필수)</span>
+      </div>
+
+      <div id="shop">
+        <iframe src="shopingAgree.html" frameborder="1px"></iframe>
+        <span>쇼핑정보 수신에 동의하십니까?</span>
+        <input type="checkbox" class="items" />
+        <span>동의함 (선택)</span>
+      </div>
+
+      <div id="btn">
+        <button type="button" id="registerBtn">회원가입</button>
+      </div>
+    </div>
+
+    <script src="script/jquery-3.7.1.js"></script>
+    <script src="script/script.js"></script>
+  </body>
+</html>

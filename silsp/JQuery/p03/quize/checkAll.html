@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>체크박스 선택해제</title>
+    <style>
+      div#wrap {
+        border: 2px solid #f80;
+        border-radius: 10px;
+        margin: 10px;
+        padding: 10px;
+        width: 290px;
+      }
+      h1 {
+        text-align: center;
+      }
+      fieldset{
+        padding: 15px 25px;
+        margin: 15px 10px;
+
+      }
+      legend{
+        font-size: 18px;
+        font-weight: bold;
+      }
+      button {
+        cursor: pointer;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="wrap">
+      <h1>체크박스 선택해제</h1>
+      <div id="checkbox">
+        <fieldset>
+          <legend>취미</legend>
+          <span>여행</span><input type="checkbox" value="여행" />
+          <span>음악</span><input type="checkbox" value="음악" />
+          <span>게임</span><input type="checkbox" value="게임" />
+        </fieldset>
+      </div>
+
+      <div id="btn">
+        <button id="bt1">전체 체크</button>
+        <button id="bt2">전체 해제</button>
+      </div>
+    </div>
+
+    <script src="jquery-3.7.1.js"></script>
+    <script>
+      $(function () {
+        $("#bt1").click(function () {
+          $("input[type=checkbox]").prop("checked", true);
+        });
+         $("#bt2").click(function () {
+          $("input[type=checkbox]").prop("checked", false);
+        });
+      });
+    </script>
+  </body>
+</html>

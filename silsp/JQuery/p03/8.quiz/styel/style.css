@@ -1,0 +1,31 @@
+@charset "UTF-8";
+div#wrap {
+  width: 350px;
+  border: 2px solid #000;
+  border-radius: 10px;
+  margin: 10px;
+  padding: 10px;
+  justify-content: center;
+}
+
+.gnbm {
+  text-decoration: none;
+  list-style-type: none;
+  justify-content: center;
+}
+.gnbm li {
+  display: table-cell;
+  padding: 0 10px;
+  text-align: center;
+}
+.gnbm .mli{
+  font-size: 15px;
+}
+.gnbm a{
+  text-decoration: none;
+  color: #000;
+}
+/* .gnbm li a:hover{
+  font-weight: bold;
+} */
+

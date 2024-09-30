@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HTML 속성관련 메서드</title>
+    <style>
+      span {
+        font-size: 20px;
+      }
+      input {
+        width: 20px;
+        height: 20px;
+
+        transform: translate Y(4px);
+      }
+    </style>
+  </head>
+  <body>
+    <h1 id="h1Tag">HTML 속성 관련 메서드</h1>
+    <span>선택1</span><input type="checkbox" value="우포리" /><br />
+    <span>선택2</span><input type="checkbox" value="몽키" />
+
+    <script src="jquery-3.7.1.js"></script>
+    <script>
+      $(function () {
+        $("input[type=checkbox]:eq(1)").prop('checked', );
+      });
+    </script>
+  </body>
+</html>

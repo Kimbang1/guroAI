@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .blue {
+        color: blue;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>제목 1단계 크기</h1>
+    <h2>제목 2단계 크기</h2>
+    <p>문단입니다.</p>
+    <p>또다른 문단입니다.</p>
+
+    <br />
+    <button type="button">ToggleClass 확인결과 클릭</button>
+    <script src="jquery-3.7.1.js"></script>
+    <script>
+      $(function () {
+        $("button").click(function () {
+          $("h1,h2,p").toggleClass("blue");
+        });
+      });
+    </script>
+  </body>
+</html>
