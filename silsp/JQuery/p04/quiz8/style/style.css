@@ -1,0 +1,28 @@
+@charset "UFT-8";
+
+div#wrap{
+  border: 2px solid #000;
+  width: 500px;
+  margin: 10px;
+  padding: 20px 10px 10px;
+}
+hr{
+  margin: 10px 0;
+}
+#textbox textarea{
+  display: block;
+  border: 1px solid #000;
+  width: 95%;
+  font-size: 17px;
+  padding: 6px;
+  height: 80px;
+  margin-bottom: 10px;
+}
+span{
+  width: 30px;
+  text-align: right;
+  border: 1px solid #000;
+  margin-left: 5px;
+  display: inline-block;
+
+}

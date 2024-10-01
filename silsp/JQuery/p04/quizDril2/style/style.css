@@ -1,0 +1,39 @@
+@charset "UFT-8";
+
+div#wrap {
+  border: 2px solid #000;
+  width: 1000px;
+  margin: 10px;
+  text-align: center;
+}
+#slideshowArea {
+  overflow: hidden;
+}
+#slideFrame {
+  width: 1000px;
+  display: flex;
+  transition: all 1s ease;
+  /* position: relative; */
+}
+a {
+  display: block;
+  width: 1000px;
+  position: relative;
+  /* border: 1px solid #000; */
+}
+span.msg {
+  position: absolute;
+  top: 30%;
+  left: 35%;
+  width: 300px;
+  height: 70px;
+  padding-top: 30px;
+  background-color: azure;
+  opacity: 0.5;
+  display: block;
+  text-align: center;
+  border: 2px solid azure;
+  border-radius: 10px;
+  margin-left: 10px;
+  z-index: 1;
+}

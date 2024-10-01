@@ -1,0 +1,124 @@
+@charset "UFT-8";
+
+div#wrap {
+  border: 2px solid #aaa;
+  width: 1200px;
+  margin: 10px;
+  padding: 20px 10px 10px;
+  text-align: center;
+}
+hr {
+  size: 20px;
+  border: 1px solid #aaa;
+}
+#navRow {
+  display: flex;
+  height: 40px;
+  align-items: center;
+  margin: 0 0 30px;
+}
+/* gnb리스트 작업 */
+#gnb {
+  width: 1000px;
+  height: 10px;
+  display: flex;
+  justify-content: center;
+  margin: 10px 60px;
+  align-items: center;
+  li {
+    list-style: none;
+    text-decoration: none;
+    border-right: 1px solid #000;
+    padding: 0;
+    > a {
+      color: black;
+      text-decoration: none;
+    }
+  }
+  li:last-child {
+    border: none;
+  }
+}
+/* gnb리스트 작업 끝*/
+/* 사진 배열 작업 */
+div#img {
+  display: flex;
+}
+/* 오른쪽 사진 창들 작업 */
+div#right {
+  width: 800px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+/* 사진 크기 통일 */
+li > .imgCD {
+  border: 1px solid #000;
+  width: 85%;
+  height: auto;
+  object-fit: cover;
+}
+
+/* 세미타이틀 색 크기 지정 작업 */
+.semiTilte {
+  color: #f5b154;
+}
+.won {
+  color: #89d8cb;
+  font-size: 25px;
+}
+
+#main {
+  display: flex;
+  margin: 0;
+}
+#main2 {
+  display: flex;
+}
+li {
+  flex: 1;
+  text-align: center;
+  /* padding: 10px; */
+  list-style: none;
+  color: black;
+  text-decoration: none;
+}
+.modalCloseBtn {
+  position: absolute;
+  top: 10px;
+  right: 400px;
+  color: #f80;
+  font-size: 25px;
+  font-weight: bold;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  z-index: 10;
+}
+#modalContainer {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+#modalContainer.hidden {
+  display: none;
+}
+
+#modalContent {
+  position: absolute;
+  display: flex;
+  width: 100%;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+  > img {
+    width: 400px;
+    height: 400px;
+  }
+}
