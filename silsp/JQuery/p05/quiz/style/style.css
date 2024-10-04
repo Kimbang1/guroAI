@@ -1,0 +1,7 @@
+@charset "UFT-8";
+
+#wrap>* {
+  padding: 5px;
+  border: 2px solid #f00;
+  display: block;
+}

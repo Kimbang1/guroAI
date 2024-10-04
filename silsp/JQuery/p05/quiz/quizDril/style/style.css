@@ -1,0 +1,311 @@
+@charset "UFT-8";
+
+#wrap {
+  border: 1px solid #000;
+  height: 700px;
+  padding: 10px;
+  justify-items: center;
+}
+/* head 라인 작업 */
+#head {
+  width: 100%;
+  height: 100px;
+  background-color: #cdb17f;
+  border: 1px solid #000;
+  position: relative;
+  z-index: 1;
+}
+#headrap {
+  width: 1200px;
+  height: 100px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+}
+#headlog img {
+  height: 100px;
+}
+#gnb {
+  width: 500px;
+  /* padding: 30px; */
+  /* border: 1px solid #000; */
+  display: flex;
+  justify-items: center;
+  align-items: center;
+  /* height: 50px; */
+
+  > .main {
+    background-color: rgba(255, 255, 255, 0.4);
+    text-align: center;
+    width: 25%;
+    height: 40px;
+    flex: 1;
+    position: relative;
+    border: 1px solid #000;
+
+    > span {
+      display: block;
+      padding: 10px;
+    }
+    > .submenu {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      border: 1px solid #aaa;
+      background-color: rgba(255, 255, 255, 0.4);
+      position: absolute;
+      left: 0;
+      top: 100%;
+      z-index: 1;
+      > span {
+        line-height: 30px;
+        border: 1px solid #000;
+        display: inline-block;
+        height: 30px;
+        width: 100%;
+      }
+      span:hover {
+        background-color: rgba(255, 255, 255, 0.7);
+      }
+    }
+    > span:hover {
+      background-color: rgba(255, 255, 255, 0.7);
+    }
+  }
+  > .main:not(:last-child) {
+    border-right: none;
+  }
+}
+
+a {
+  color: #000;
+  text-decoration: none;
+}
+
+/* head 라인 작업 끝*/
+
+/* 슬라이드 쇼 작업 */
+#showArea {
+  width: 1200px;
+  height: 300px;
+  border: 1px solid #000;
+  margin: 0 auto;
+  align-items: center;
+  overflow: hidden;
+}
+#slideFrame {
+  display: flex;
+  width: 3600px;
+  height: 300px;
+  position: relative;
+  flex-wrap: nowrap;
+}
+.slideA {
+  opacity: 1;
+  width: 1200px;
+  position: relative;
+  > img {
+    width: 1200px;
+    height: 300px;
+  }
+}
+
+span.msg {
+  line-height: 100px;
+  font-size: 30px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 400px;
+  height: 100px;
+  background-color: rgba(255, 255, 255, 0.4);
+  /* opacity: 0.5; */
+  display: block;
+  text-align: center;
+  color: #2f9ee6;
+  /* border: 2px solid rgba(255, 255, 255, 0.4); */
+  border-radius: 10px;
+  margin-left: 10px;
+  z-index: 1;
+}
+
+/* 슬라이드 쇼 작업 끝*/
+
+/* 3번쨰 줄 */
+#main {
+  width: 1200px;
+  height: 200px;
+  display: flex;
+  justify-content: space-between;
+  margin: 0 auto;
+  position: relative;
+}
+.btn {
+  padding: 0 10px 0 10px;
+}
+.button {
+  position: absolute;
+  top: 1px;
+  border: 1px solid #aaa;
+  border-bottom: none;
+  z-index: 1;
+}
+#c1 {
+  position: relative;
+  flex: 1;
+  height: 100%;
+  /* border: 1px solid #000; */
+  padding: 10px;
+  margin: 10px;
+}
+#info {
+  position: relative;
+  top: 10px;
+  border: 1px solid #aaa;
+  height: 70%;
+}
+div.spandis {
+  color: #aaa;
+  /* border: 1px solid #000; */
+  margin: 20px 0;
+  display: flex;
+  justify-content: space-evenly;
+}
+#aclick {
+  color: #aaa;
+}
+/* modal 레이어 작업 */
+#modalWrap {
+  display: none;
+  padding: 0 20px;
+  width: 630px;
+  /* position: absolute;
+  left: 30px; */
+
+}
+#title {
+  text-align: center;
+}
+div#list {
+  height: 170px;
+  padding: 0;
+  margin: 10px;
+  text-align: left;
+}
+#info2 {
+  position: absolute;
+  top:50%;
+  left:50%;
+  transform: translate(-50%,-50%);
+  z-index: 2;
+  border-radius: 10px;
+  background-color: white;
+  border: 1px solid #aaa;
+  width: 500px;
+}
+.inhelt {
+  line-height: 20px;
+  margin: 5px;
+}
+.inhelt {
+  font-size: 12px;
+  color: #aaa;
+  > span {
+    display: inline-block;
+    padding: 0 10px;
+  }
+}
+#mdbutton {
+  padding: 10px;
+  position: relative;
+  left: 380px;
+}
+#bt3 {
+  cursor: pointer;
+  color: white;
+  background-color: #aaa;
+  border: none;
+  width: 80px;
+  height: 30px;
+  border-radius: 5px;
+}
+/* modal 레이어 작업 끝 */
+#c2 {
+  flex: 1;
+  display: flex;
+  position: relative;
+  height: 100%;
+  margin: 10px;
+}
+#gallery {
+  display: flex;
+  border: 1px solid #aaa;
+  position: absolute;
+  top: 20px;
+  width: 100%;
+}
+.bt2 {
+  margin: 10px;
+  width: 0;
+}
+.inimg {
+  padding: 10px;
+  height: 140px;
+  > img {
+    height: 100%;
+    width: 100%;
+  }
+}
+
+#c3 {
+  flex: 1;
+  padding: 10px 0;
+  > img {
+    /* padding: 10px; */
+    height: 100%;
+    width: 100%;
+  }
+}
+
+/* 3번째 줄 작업 끝*/
+
+
+/* 4번째 줄 작업 */
+div#footter {
+  width: 100%;
+  height: 100px;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: space-around;
+  background-color: #cdb17f;
+  text-align: center;
+}
+#logofooter {
+  width: 250px;
+  > img {
+    height: 100px;
+  }
+}
+#copyright {
+  flex: 1;
+  justify-content: center;
+  padding: 30px 0;
+  > span {
+    color: #747272;
+    display: block;
+    text-align: center;
+  }
+}
+#snsimg {
+  width: 250px;
+  padding: 30px 30px;
+  > img {
+    margin: 5px;
+    height: 40px;
+    width: 40px;
+  }
+}
+
+/* 4번째 줄 작업 끝*/
