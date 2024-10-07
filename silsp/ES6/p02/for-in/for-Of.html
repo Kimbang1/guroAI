@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>for-Of 제어문</title>
+</head>
+<body>
+  
+  <h1>for-Of 제어문</h1>
+  <script>
+    const obj = {
+      brand : `GM`,
+      model :`트래버스`,
+      price : 50000000
+    };
+    for(let [k,v] of obj){
+      console.log(k,v);
+    }
+  </script>
+</body>
+</html>

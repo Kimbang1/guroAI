@@ -1,0 +1,46 @@
+@charset "UTF-8";
+@import url(style_Reset.css);
+
+div#wrap {
+  border: 1px solid #000;
+  width: 400px;
+  margin: 10px;
+  padding: 10px;
+}
+#title{
+  margin: 10px;
+  font-weight: bold;
+}
+#checkPoint{
+  margin: 30px 0;
+  padding: 10px;
+  /* border: 1px solid #000; */
+  >input{
+    margin: 10px;
+  }
+  >span{
+    font-weight: bold;
+  }
+}
+
+#inputArea{
+  font-weight: bold;
+  display: flex;
+}
+#btn{
+  margin: 0 30px;
+}
+#num{
+  width: 40px;
+  height: 40px;
+}
+button{
+  cursor: pointer;
+  border-radius: 8px;
+  font-weight: bold;
+  width: 90px;
+  height: 40px;
+}
+#resArea{
+  font-weight: bold;
+}

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Back Tic을 사용한 Template Literal</title>
+</head>
+<body>
+  
+  <h1>템플릿 리터럴</h1>
+
+  <script>
+    let data1="사과";
+    let cnt=3;
+    console.log(data1+` "개수" :`+cnt+"개");
+    console.log("===========================");
+    console.log(`${data1}개수 : ${cnt}개`);
+    //보간법 : $과 중괄호 내부에 변수와
+    //          출력할 문자열을 함께 표시하는 표현식
+    console.log("----------------------------");
+        console.log(`${data1+"개수 :"+ cnt+"개"}`);
+
+  </script>
+</body>
+</html>

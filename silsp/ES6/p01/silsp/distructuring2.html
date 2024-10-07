@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <h1>구조분해 할당
+    <p>
+      배열, 리터럴객체(=커스텀객체), Map객체
+      편리하게 사용하기 위한 목적
+      
+    </p>
+
+    <script>
+      const person={
+        // firstName:`john`,
+        firstName:undefined,
+        lastName:`Wick`,
+        age:35
+      };
+      let{age :a, firstName:f=`Lee`}=person;
+      console.log(`${f+``+a}`)
+
+      console.log("=======================")
+
+      const fruit= [`Apple`,`Banana`,`Lemon`,`Mango`]
+      // let[f1,f2]=fruit;
+      // let[f1,,f2]=fruit;
+      let{[1]:a1, [2]:b1}=fruit;
+      // console.log(`${f1+","+f2}`);
+      console.log(`${a1+","+b1}`);
+      let[,,...r]=fruit;
+      console.log(`${r}`);
+
+    </script>
+</body>
+</html>

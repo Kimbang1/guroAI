@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    #wrap{
+      width: 380px;
+      height: 300px;
+      border: 1px solid #000;
+      padding: 10px;
+      margin: 30px auto;
+      text-align: center;
+    }
+    #title{
+      padding: 10px 0;
+    }
+    #textNumber{
+      margin: 0 0 0 10px; 
+      width: 20px;
+    }
+    
+    #btn{
+      padding: 30px;
+    }
+    button{
+      width: 100px;
+      height: 50px;
+      border-radius: 10px;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+  <div id="wrap">
+    <div id="title">
+    <span>개수 입력(20개 이상 입력)</span>
+    
+    <input type="text" id="textNumber">
+    </div>
+
+    <div id="checkbox">
+    <input class="checkbox" type="checkbox" value="대과">대과</input>
+    <input class="checkbox" type="checkbox" value="중과">중과</input>
+    <input class="checkbox" type="checkbox" value="소과">소과</input>
+    </div>
+    <div id="btn">
+    <button id="resbtn">결과확인</button>
+</div>
+<div id="res"></div>
+
+  </div>
+
+
+  <script>
+    const btnDom= document.querySelector("#resbtn");
+    const textNumberDom =document.querySelector("#textNumber");
+    const resDom =document.querySelector("#res");
+
+    // const checkbox={
+    //   대과 : `i=8`,
+    //   중과 :`i=11`,
+    //   소과 : `i=15`
+    // };
+    // let textNumber;
+    // let res=``;
+    btnDom.addEventListener("click", function(){
+      const nmberInput = parseInt(textNumberDom.value);
+      
+      if(isNaN(numberInput)||numberInput<20){
+        resDom.textContent="20개 이상의 숫자를 입력하시오.";
+        return
+      }
+      const checkboxes= document.querySelectorAll(".checkbox");
+      let selectedTypes=[];
+      let boxCount={
+        대과:0,
+        중과:0,
+        소과:0
+      };
+
+      checkboxes.forEach(element => {
+        if(checkbox.checked){
+          selectedTypes.push(checkbox.value);
+          if(checkbox.value==="대과"){
+            boxCount.대과 = Math.ceil(numberInput/8);
+          }else if(checkbox.value==="중과"){
+            boxCount.대과 = Math.ceil(numberInput/11);
+          }else if(checkbox.value==="소과"){
+            boxCount.대과 = Math.ceil(numberInput/15);
+          }
+        }
+      });
+   
+    let resText=`${nmberInput+"개,"+ "선택된 과일 종류 :"}`;
+    selectedTypes.forEach(type =>{
+      resText+= `${type +":"+ boxCount[type]+"상자,"}`;
+        });
+
+      resDom.textContent = resTxt.slice(0,-2);
+       });
+  </script>
+</body>
+</html>

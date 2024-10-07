@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>펼침연산자를 사용한 나머지 파라미터</title>
+</head>
+<body>
+  <h1>나머지 파라미터</h1>
+  <p>인수의 개수에 관계없이
+    모든 인수를 1개의 변수로 전달받고
+    배열로 처리할 수 있다.
+  </p>
+
+  <script>
+   const numbers=[22,55,21,87,56];
+   let maxValue= Math.max(...numbers);
+   console.log(`최대값(maxValue) : ${maxValue}`);
+  </script>
+  
+</body>
+</html>

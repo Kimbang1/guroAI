@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>QD 과일 포장</title>
+    <link rel="stylesheet" href="style/style.css" />
+  </head>
+  <body>
+    <div id="wrap">
+      <h1>과일 포장</h1>
+      <hr />
+      <main id="main">
+        <label id="insCnt">
+          <span>개수 입력(20개 이상)</span>
+          <input type="text" id="fruitCnt" autofocus />
+        </label>
+        <fieldset>
+          <label>
+            <input type="radio" value="8" name="cntRdo" />
+            <span>대과 </span>
+          </label>
+          <label>
+            <input type="radio" value="11" name="cntRdo" />
+            <span>중과 </span>
+          </label>
+          <label>
+            <input type="radio" value="15" name="cntRdo" />
+            <span>소과 </span>
+          </label>
+        </fieldset>
+
+        <button type="button" id="resBtn">결과확인</button>
+        <div id="resArea">
+          <p id="resTxt"> .00 0상자를 포장하고 0개 남습니다.</p>
+        </div>
+      </main>
+    </div>
+    <script src="script/script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>forEach 메서드</title>
+</head>
+<body>
+  
+  <h1>forEach() 메서드</h1>
+  
+  <script>
+    const ary = [4,-2,0];
+    ary.forEach((v,i)=>{
+      console.log(`(v,i):(${v+`,`+i})`);
+    });   //화살표 함수(Arrow Function)
+
+      //  const ary = [5,17,4];
+    // ary.forEach(function fnAry(v,i){
+    //   console.log(`(v,i):(${v+`,`+i})`);
+    // });   //익명함수(Annymous function)
+  </script>
+</body>
+</html>

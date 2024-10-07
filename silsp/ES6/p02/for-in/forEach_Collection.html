@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>forEach_Collection</title>
+  </head>
+  <body>
+    <span> 딸기 </span>
+    <span>키위</span>
+    <a>a요소</a>
+    <span>포도</span>
+    <button>클릭</button>
+
+    <script>
+      const dom = document.querySelector("button");
+      dom.addEventListener("click", () => {
+
+        const spanDom = document.querySelectorAll("span");
+        spanDom.forEach( (e,i) => {
+          console.log(`${e.innerText}`);
+        });
+      });
+    </script>
+  </body>
+</html>

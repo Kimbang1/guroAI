@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style/style.css" />
+  </head>
+  <body>
+    <div id="wrap">
+      <div id="title">[단위변환]</div>
+      <div id="checkPoint">
+        <input type="radio" name="r1" value="c2i" id="checkP1" />
+        <span>cm ➜ inch</span>
+        <input type="radio" name="r1" value="i2c" id="checkP2" />
+        <span>inch ➜ cm</span>
+      </div>
+
+      <div id="inputArea">
+        <span>센티(cm)미터 입력</span>
+        <div id="btn">
+          <input type="text" id="num" autofocus />
+          <button>결과보기</button>
+        </div>
+      </div>
+
+      <div id="resArea">
+        <p id="resText">0 0 = 0 0</p>
+      </div>
+    </div>
+    <script src="script/script.js"></script>
+  </body>
+</html>
