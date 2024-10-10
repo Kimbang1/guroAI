@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>클로저</title>
+  </head>
+  <body>
+    <h1>클로저</h1>
+
+
+
+
+    <script>
+      const test = (function () {
+        //표현식으로 만들어준다
+        let cnt=0; //지역변수
+
+        return function () {    //클로저(함수)
+          return ++cnt;
+        };
+      })();
+
+      console.log(test());
+      console.log(test());
+      console.log(test());
+    </script>
+  </body>
+</html>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>클로저 실습</title>
+  </head>
+  <body>
+    <h1>클로저 실습</h1>
+
+    <script>
+      
+      let test =function() {
+      let num=0;    //1증가 => 2증가
+        return function(param){ return ++num;};
+      };
+      let fnRes = test();   //fnRes에는 
+                            //clouser의 코드가 저장됨
+      console.log(fnRes(3)); //fnRes 실행은
+                            //functioon(){
+                            //return ++num;} 을 실행하는 것.
+      console.log(fnRes());
+
+
+      function sample(){
+        let num = 3;
+      }
+    </script>
+  </body>
+</html>

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      #wrap {
+        width: 500px;
+        padding: 10px;
+        border: 2px solid #000;
+        margin: 20px auto;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="wrap">
+      <h1>리터럴 객체 관련 함수</h1>
+      <hr />
+    </div>
+    <script>
+      //리터럴 객체
+      const objApple = {
+        //키:값
+        //속성: 속성값
+        //값 : (속성)값
+        coler: `빨강`,
+        taste: `새콤달콤`,
+        price: 2000,
+      };
+      console.log(objApple.coler);
+      for (const key in objApple) {
+        console.log(objApple[key]);
+      }
+      console.log(`========================`);
+
+      const person = {
+        firstName: `Cruise`,
+        lastName: `Tom`,
+        fullName: function (x, y) {
+          return x+` `+y;
+        },
+      };
+      const test = {
+        firstName: `병헌`,
+        lastName: `이`
+      };
+      console.log(person.fullName.call(test,`김`,`태리`));
+      console.log(person.fullName.apply(test,[`김`,`태리`]));
+       console.log(`========================`);
+
+      const sample ={
+        display: function(p1,p2){
+          p1++, p2--;
+          console.log(p1 +", "+p2);
+        },
+      };
+      let fnDp = sample.display.bind(sample,1,2);
+      console.log(typeof sample.display);
+      setTimeout(fnDp,3000);
+    </script>
+  </body>
+</html>

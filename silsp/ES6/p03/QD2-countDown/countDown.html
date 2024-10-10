@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>카운트 다운</title>
+    <link rel="stylesheet" href="style/style.css" />
+  </head>
+  <body>
+    <div id="wrap">
+      <div id="header">
+        <h1>카운트 다운</h1>
+      </div>
+      <hr />
+      <div id="main">
+        <div id="time">
+          <span>현재 시간</span>
+          <span>14:27</span>
+        </div>
+
+        <div id="text">
+          <span>현재 시간 이후의 종료시간을 입력하세요</span>
+        </div>
+
+        <div id="closeTime">
+          <span>종료시간 설정</span>
+          <input type="time" />
+          <button id="checkb">확인</button>
+        </div>
+
+        <div id="chcloseTime">
+          <span>설정된 종료시간</span>
+          <span>00:00</span>
+        </div>
+
+        <div id="remaining">
+          <span>남은시간 카운트</span>
+          <span>00:00:00</span>
+        </div>
+      </div>
+
+      <div id="btnArea">
+        <button id="Start">카운트 시작</button>
+        <button id="Stop">카운트 중지</button>
+        <button id="Reset">종료시간 리셋</button>
+      </div>
+    </div>
+    <script src="script/script.js"></script>
+  </body>
+</html>

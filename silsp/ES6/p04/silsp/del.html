@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>배열 요소 제거</title>
+</head>
+<body>
+  <h1>배열 요소 제거</h1>
+
+  <script>
+    const score =[5,2,7,13,9];
+    // score.pop();  //pop =제일 마지막 삭제 
+    score.push(77);  //push=하나 추가
+    console.log(score.toString());
+    
+    score.splice(0,3);//인덱스 0번부터 3번까지 삭제
+    console.log(score.length);
+    console.log(score.toString());
+
+  </script>
+</body>
+</html>

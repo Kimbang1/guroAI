@@ -1,0 +1,61 @@
+@charset "UTF-8";
+@import url(style_Reset.css);
+
+div#wrap {
+  width: 350px;
+  padding: 10px;
+  border: 2px solid #aaa;
+  border-radius: 4px;
+  margin: 10px auto;
+}
+h1 {
+  text-align: center;
+}
+hr {
+  margin: 10px 0;
+}
+
+main#main {
+  margin-bottom: 15px;
+}
+
+div.contents {
+  margin-bottom: 10px;
+}
+div.contents>span:first-child {
+  /* border: 1px solid #000; */
+  margin-right: 10px;
+}
+
+span#nowTM {
+  font-weight: bold;
+}
+
+div#insArea input[type=time] {
+  font-size: 16px;
+  font-weight: bold;
+  padding: 4px 8px;
+}
+div#insArea input[type=time]+button {
+  font-size: 18px;
+  font-weight: bold;
+  padding: 4px 16px 6px;
+  cursor: pointer;
+}
+
+span#endTM {
+  font-weight: bold;
+}
+
+span#cntdown {
+  font-weight: bold;
+}
+
+div#btnArea {
+  text-align: center;
+}
+#btnArea>button {
+  font-size: 17px;
+  font-weight: bold;
+  padding: 6px 4px;
+}

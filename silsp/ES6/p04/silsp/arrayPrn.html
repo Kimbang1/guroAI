@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>배열출력</title>
+  </head>
+  <body>
+    <h1>배열출력</h1>
+    <hr />
+    <div id="res"></div>
+
+    <script>
+      const score = [5, 2, 7, 13, 9];
+      const newAry = score.map((v, i, a) => {
+        return v * 2;
+      }); //newAry 배열 신규 생성
+      // let res = newAry.join("_ ");
+      // let res=score.join("_ ");
+
+      //map객체
+      const Map객체변수 = new Map(); //생성자
+      //Map 메서드 아님
+      const newAry2 = score.filter((v, i, a) => {
+        return v > 5; //조건식을 대신함
+      });
+      res = newAry2.join(", ");
+
+      // score.forEach((v,i)=>{
+      //   res += v+", ";
+      // })
+
+      const fruits = ["Banana", "Orange", "Apple", "Mango"];
+      const keys = fruits.keys();
+      let text = "";
+      for (let x of keys) {
+        text += x + "<br>";
+      }
+      
+      const modAry = fruits.with(1,'햄버거');
+      res=modAry.join(", ")
+
+      document.querySelector("#res").innerHTML = res;
+    </script>
+  </body>
+</html>

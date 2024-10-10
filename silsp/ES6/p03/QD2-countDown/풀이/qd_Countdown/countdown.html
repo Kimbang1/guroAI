@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Quiz Drill_카운트다운2</title>
+    <link rel="stylesheet" href="style/style.css" />
+  </head>
+  <body>
+    <div id="wrap">
+      <h1>카운트다운</h1>
+      <hr />
+      <main id="main">
+        <div class="contents">
+          <span>현재시간</span>
+          <span id="nowTM">14:27</span>
+        </div>
+        <div class="contents">
+          <span>현재 시간 이후의 종료시간을 입력하세요</span>
+        </div>
+        <div class="contents" id="insArea">
+          <span>종료시간 설정</span>
+          <label>
+            <input type="time" id="insEndTime" />
+            <button type="button" id="setBtn">확인</button>
+          </label>
+        </div>
+        <div class="contents">
+          <span>설정된 종료시간</span>
+          <span id="endTM">00:00</span>
+        </div>
+        <div class="contents">
+          <span>남은시간 카운트</span>
+          <span id="cntdown">00:00:00</span>
+        </div>
+      </main>
+      <div id="btnArea">
+        <button type="button" id="countStart">카운트 시작</button>
+        <button type="button" id="countStop">카운트 중지</button>
+        <button type="button" id="countReset">종료시간 리셋</button>
+      </div>
+    </div>
+    <script src="script/script.js"></script>
+  </body>
+</html>
