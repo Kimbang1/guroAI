@@ -18,7 +18,11 @@ input{
   height: 30px;
 }
 button{
+  cursor: pointer;
   border-radius: 7px;
   width: 60px;
   height: 30px;
+}
+button:hover{
+  background-color: #aaa;
 }

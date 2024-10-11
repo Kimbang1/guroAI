@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>리터럴 객체</title>
+  </head>
+  <body>
+    <div id="wrap">
+      <h1>리터럴 객체</h1>
+    </div>
+
+    <script>
+      //객체에 " " 써도 돼고 안써도 돼지만 `` 백틱은 쓰면 안됌.
+      const test = {
+        a:50,
+        name : "Lee",
+        count: 6
+        // name: "kim",
+        // birthYear: 1998,
+        // hobby: "swim",
+        // fnAge: function () {
+        //   return 2022 - this.birthYear + 1;
+        // } // => 함수를 쓰게 되면 this 가 person을 인식하지 못함!
+        //   // 속성 표기법의연산자 :
+        //   //식의 표기법의 연사자 =
+        
+      }; //리터럴 객체
+      delete test.name;
+      console.log(Object.entries(test).toString());
+    </script>
+  </body>
+</html>
