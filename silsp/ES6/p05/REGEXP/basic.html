@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>정규표현식</title>
+</head>
+<body>
+  <h1>정규표현식</h1>
+
+  <script>
+    let reg =/[A-z] m /i;
+    // let reg =/패턴/수정자;    //정규표현식
+            //문자(숫자로 표시된 문자 포함)를
+            //사용하여 일치하는 규칙 또는
+            //동일한 내용이 있는가를 판별
+      let text ='fineapple';
+      console.log(reg.test(text));
+    </script>
+</body>
+</html>

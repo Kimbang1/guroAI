@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>정규표현식 적용</title>
+  </head>
+  <body>
+    <h1>정규표현식 적용</h1>
+    <p id="p"></p>
+
+    <script>
+      let text = "AB_3R"; //아이디 점검용
+      let pattern = /^(?=.*[A-z])(?=.*\d)(?=.*[@%_-])[A-z\d@$_-]{5,}$/;
+      // A~z까지   0~9까지   @%-_ 중    앞의 조건들포함헤서 총 5글자이상
+
+      let result = pattern.test(text);
+      console.log("result :" + result);
+      let errMsg =
+        "아이디가 잘못되었습니다.\n" +
+        "(5글자 이상, 영대문자 1글자 이상)\n" +
+        "숫자 1글자 이상, 기호@,$,-,_ 4개중 가능";
+
+      if (!result) {
+        alert(errMsg);
+        document.querySelector("#p").innerText=errMsg;
+      } else {
+        console.log("ok!");
+      }
+    </script>
+  </body>
+</html>

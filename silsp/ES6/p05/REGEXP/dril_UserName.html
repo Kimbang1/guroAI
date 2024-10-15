@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>정규표현식 적용 이름</title>
+  </head>
+  <body>
+    <h1>정규표현식 적용 이름</h1>
+    <p id="p"></p>
+
+    <script>
+      let text = "이천영3"; //이름 점검용
+      let pattern = /^(?=.*[ㄱ-ㅎㅏ-ㅣ가-힣])[ㄱ-ㅎㅏ-ㅣ가-힣]{2,4}$/;
+      //        한글 자음 도는 조합어가 각각1글자 이상 필수         앞의 조건들포함헤서 총 2글자이상 4글자 이하
+
+      let result = pattern.test(text);
+      console.log("result :" + result);
+      let errMsg =
+        "이름이 잘못되었습니다.\n" +
+        "(2글자 이상4글자 이하 가능)";
+      if (!result) {
+        alert(errMsg);
+        document.querySelector("#p").innerText=errMsg;
+      } else {
+        console.log("ok!");
+      }
+    </script>
+  </body>
+</html>

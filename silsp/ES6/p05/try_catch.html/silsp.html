@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>에외 던지기</h1>
+    <p id="demo"></p>
+
+    <script>
+      try {
+        let num =parent(prompt("양수만 입력"));
+        if (num < 0) throw "양수만 입력하시오.";
+        if((num==0))throw"0은 안됩니다. 양수만 입력바랍니다!";
+        document.getElementById("demo").innerHTML = err.message;
+      } catch (err) {
+        //	에러	발생시	대체	실행
+        document.getElementById("demo").innerHTML = err.message;
+      }
+    </script>
+  </body>
+</html>

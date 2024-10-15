@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <h1>클래스</h1>
+
+  <script>
+    class Car{
+      //필드
+      strname= "햄버거";
+      //여기까지가 필드
+      constructor(name,year){           //생성자 메서드
+        this.name=name;                 //객체 속성(필드가 아님)
+        this.year=year;
+      }
+
+      age(){
+        let date = new Date();
+        return date.getFullYear()-this.year;
+                    //2024년도 의미    2013의미
+      }
+    }
+
+  let objCar=new Car('Volvo',2013);          //클래스 객체
+  console.log("클래스 메서드 실행: "+objCar.age());
+  </script>
+</body>
+</html>
