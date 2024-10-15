@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Map 객체 관련 메서드</title>
+  </head>
+  <body>
+    <h1>Map 객체 관련 메서드</h1>
+
+    <script>
+      const mapObj = new Map([]);
+
+      //set으로 설정후 get으로 가져옴
+      mapObj.set("apple",1200);
+      mapObj.set("banana",800);
+      console.log(mapObj.get("apple"))
+
+      console.log("요소의 갯수 :"+mapObj.size);
+
+
+      mapObj.delete("apple");
+      for (const [k, v] of mapObj.entries()) {
+        console.log(k);
+      }
+
+       console.log("요소의 갯수 :"+mapObj.size);    //apple 요소를 지워주면 banan 한개만 나옴.
+    </script>
+  </body>
+</html>

@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>lottery</title>
+  
+  <style>
+    div#wrap{
+      border-radius: 9px;
+      border: 4px solid #aaa;
+      width: 500px;
+      text-align: center;
+      margin: 10px auto;
+      padding: 10px auto;
+    }
+    div#box{
+      >input{
+        width: 45px;
+        height: 35px;
+      }
+      >button{
+        cursor: pointer;
+        width: 70px;
+        height: 30px;
+        border-radius: 8px;
+      }
+    }
+
+    div#button{
+      margin: 10px;
+      button{
+        width: 50px;
+        height: 35px;
+        border-radius: 8px;
+        cursor: pointer;
+      }
+      > #resetBtn{
+        cursor: pointer;
+        width: 70px;
+        height: 30px;
+        border-radius: 8px;
+      }
+    }
+  </style>
+<body>
+  <div id="wrap">
+    <h1>번호 추첨</h1>
+
+    <div id="box">
+      <input id="rd1" type="text">
+      <input id="rd2" type="text">
+      <input id="rd3" type="text">
+      <button id="startBtn">Start</button>
+    </div>
+
+    <div id="button">
+      <button id="go1">눌러!</button>
+      <button id="go2">눌러!</button>
+      <button id="go3">눌러!</button>
+      <button id="resetBtn">Reset</button>
+    </div>
+
+  </div>
+  <script>
+    //start 버튼 reset 버튼 눌렀을때
+    const startBtnDom = document.querySelector("#startBtn");
+    const resetBtnDom = document.querySelector("#resetBtn");
+
+    //눌러! 버튼들 눌렀을때
+    const go1 =document.querySelector("#go1");
+    const go2 =document.querySelector("#go2");
+    const go3 =document.querySelector("#go3");
+
+    //결과 표시
+    const inputBDom= document.querySelectorAll("input");
+
+    //전역변수 
+    let ranDomnum=[]; //중복되지 않는 숫자를 저장
+    let selectedNums=[null,null,null];  //go 버튼으로 고정된 숫자
+    let intervalFlag;
+
+    //중복되지 않게 하는 생성함수
+    function gnRandomNums(){
+      const numbers =[];
+      while(numbers.length<3){
+        const randNum = Math.floor(Math.random()*10)+1;
+        if(!numbers.includes(randNum)){
+          numbers.push(randNum);
+        }
+      }
+      return numbers;
+    }
+
+    //랜덤 숫자를 0.1초 간격으로 보여주기
+    function fnStart(){
+      intervalFlag = setInterval(()=>{
+        ranDomnum=gnRandomNums();
+        inputBDom.forEach((input,index)=>{
+          if(selectedNums[index] === null){
+            input.value = ranDomnum[index];
+          }
+        });
+      },100);
+    }
+
+    //랜덤 시작 클릭
+    startBtnDom.addEventListener("click",()=>{
+      if(!intervalFlag){
+        fnStart();
+      }
+    });
+
+    //go 버튼 클릭시 숫자 고정
+    function fixNumbers(index){
+    if(selectedNums[index] === null){
+      selectedNums[index]=ranDomnum[index];    //고정된 숫자 배열 추가
+      inputBDom[index].value=ranDomnum[index];    //해당 숫자칸에 고정
+      checkIfAllgoBtn();
+    }
+  }
+
+    //모든 go 버튼 클릭후, 다시 랜덤 변화
+    function checkIfAllgoBtn(){
+      if(selectedNums.every(num =>num !== null)){
+        clearInterval(intervalFlag);
+      }
+  }
+    //go1버튼 클릭
+    go1.addEventListener("click",()=>{
+        fixNumbers(0);
+    });
+    //go2버튼 클릭
+    go2.addEventListener("click",()=>{
+        fixNumbers(1);
+    });
+    //go3버튼 클릭
+    go3.addEventListener("click",()=>{
+        fixNumbers(2);
+    });
+
+
+    //리셋버튼 클릭
+    resetBtnDom.addEventListener("click",()=>{
+      selectedNums=[null,null,null];
+      ranDomnum=[];
+      clearInterval(intervalFlag);
+      intervalFlag=null;
+      inputBDom.forEach((input)=>{
+        input.value='';
+      });
+    });
+
+
+  </script>
+</body>
+</html>

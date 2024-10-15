@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>상품 재고등록</title>
+    <link rel="stylesheet" href="style/style.css" />
+  </head>
+  <body>
+    <div id="wrap">
+      <div id="main">
+        <h1>상품재고등록</h1>
+        <hr />
+        <div id="main2">
+          <div id="inputArea">
+            <div id="left">
+              <span>상품명</span>
+              <input type="text" id="objectTag" />
+            </div>
+
+            <div id="right">
+              <span>수량</span>
+              <input type="number" id="count" />
+            </div>
+          </div>
+
+          <div id="btnArea">
+            <button id="btn">등록하기</button>
+          </div>
+        </div>
+      </div>
+      <div id="resArea">
+        <h1>재고목록</h1>
+        <hr />
+        <div id="gnb">
+          <div id="Num">No</div>
+          <div id="Tag">상품명</div>
+          <div id="Quantity">수량</div>
+          <div id="delet">삭제</div>
+        </div>
+        <hr id="gray" />
+
+        <div id="reslist"></div>
+      </div>
+    </div>
+    <script src="script/script.js"></script>
+  </body>
+</html>

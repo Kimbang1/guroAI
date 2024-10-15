@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Map 객체 제어문과 메서드</title>
+  </head>
+  <body>
+    <h1>for-of 제어문과 forEach()메서드</h1>
+    <script>
+      const obj = new Map([
+        ["상품명", "오디오"],
+        ["가격", 250000],
+      ]);
+
+      let x = obj.entries();
+
+      x.forEach((prop,idx) => {
+        console.log(idx);
+      });
+
+      // for (const [k, v] of x) {
+      //   console.log(k);
+      // }
+    </script>
+  </body>
+</html>

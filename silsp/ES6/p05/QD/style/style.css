@@ -1,0 +1,107 @@
+@charset "UTF-8";
+@import url(style_Reset.css);
+
+h1 {
+  margin: 10px;
+}
+#gray {
+  border: 1px solid #aaa;
+}
+hr {
+  margin: 10px 0;
+  border: 1px solid #000;
+}
+#main {
+  width: 400px;
+  padding: 10px;
+  border: 1px solid #aaa;
+  border-radius: 4px;
+  margin: 20px auto;
+}
+#main2 {
+  width: 100%;
+}
+#inputArea {
+  display: flex;
+}
+div#left {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  flex: 3;
+  padding: 0 5px 0;
+  > input {
+    height: 40px;
+    border-radius: 8px;
+  }
+}
+div#right {
+  display: flex;
+  padding: 0 5px 0 0;
+  flex-direction: column;
+  text-align: center;
+  flex: 1;
+  > input {
+    height: 40px;
+    border-radius: 8px;
+  }
+}
+#btnArea {
+  padding: 5px;
+}
+button {
+  cursor: pointer;
+  width: 100%;
+  height: 40px;
+  border-radius: 8px;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+div#resArea {
+  width: 400px;
+  padding: 10px;
+  border: 1px solid #aaa;
+  border-radius: 4px;
+  margin: 20px auto;
+}
+#gnb {
+  display: flex;
+  justify-content: space-around;
+  text-align: center;
+}
+#Num,
+#Quantity,
+#delet {
+  flex: 1;
+}
+#delet {
+  cursor: pointer;
+}
+#delet:hover {
+  background-color: aliceblue;
+  color: #aaa;
+}
+#Tag {
+  flex: 3;
+}
+#reslist {
+  width: 400px;
+}
+.item {
+  text-align: center;
+  display: flex;
+  justify-content: space-around;
+  margin: 10px 0;
+}
+#no,
+#quantity,
+.delete {
+  flex: 1;
+}
+#name {
+  flex: 2;
+}
+.delete {
+  cursor: pointer;
+}
