@@ -1,0 +1,79 @@
+@charset "UTF-8";
+@import url(style_Reset.css);
+
+div#wrap {
+  width: 500px;
+  padding: 10px;
+  border: 4px solid #aaa;
+  border-radius: 4px;
+  text-align: center;
+  margin: 20px auto;
+}
+h1 {
+  padding: 5px;
+  background-color: #9bd5fd;
+  border-bottom: 3px solid #aaa;
+}
+div.box {
+  display: flex;
+  margin: 15px;
+}
+.right {
+  flex: 1;
+  text-align: left;
+  > span {
+    font-weight: bold;
+    font-size: 20px;
+  }
+}
+
+.left {
+  flex: 3;
+  display: flex;
+  flex-direction: column;
+}
+
+.alert{
+  display: flex;
+    > input {
+    width: 130px;
+    height: 30px;
+  }
+}
+
+.smallText {
+  text-align: left;
+  font-size: 15px;
+}
+#btnArea {
+  padding: 10px;
+}
+button {
+  cursor: pointer;
+  border: none;
+  width: 100px;
+  height: 30px;
+  background-color: #0083ff;
+  color: white;
+}
+
+#chbox{
+  display: flex;
+  margin: 15px;
+}
+#chright{
+  flex: 1;
+  font-weight: bold;
+  font-size: 20px;
+}
+#ckleft{
+  flex: 3;
+  justify-items: left;
+}
+#check{
+  width: 100px;
+  margin: 0 ;
+}
+#chalert{
+  display: flex;
+}

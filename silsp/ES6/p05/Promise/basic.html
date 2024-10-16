@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Promise(프로미스)</title>
+</head>
+<body>
+  <h1>프라미스 기초사용법</h1>
+  
+  <script>
+    // let objProm = new Promise(function(resolve,reject){
+    //                           //매개 변수의 순서가 중요
+
+    //   //생성코드 시작
+    //   let CodeName = 0;
+      
+    //   if(CodeName == 0){
+    //     resolve("ok");    //정상 실행될때
+    //   }else{
+    //     reject("Error");    //에러 발생할 때
+    //   }
+
+    // });
+
+    // //소비코드
+    // objProm.then(
+    //   // function(v){alert("정상")},
+    //   // function(e){alert("에러")}
+    //   function(v){console.log(`정상실행 : ${v}`)},        
+    //   function(e){console.log(`에러발생 : ${e}`)}
+    // );
+
+      //함수사용한 프로미스 코드
+    async function sample(resolve){
+
+      let objProm = new Promise(function(resolve){
+        resolve("ok353");
+      });
+      console.log("정상실행 : "+await objProm);
+    }
+
+    //소비코드
+    
+    sample().then(function(v){
+      // console.log(`정상실행 : ${v}`);
+    });
+
+  </script>
+</body>
+</html>

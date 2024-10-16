@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style/style.css" />
+  </head>
+  <body>
+    <div id="wrap">
+      <h1>상품등록</h1>
+
+      <form id="inputForm">
+        <div id="inputArea">
+          <div class="box">
+            <div class="right">
+              <span>상품코드</span>
+            </div>
+
+            <div class="left">
+              <div class="alert">
+                <input id="spC" type="text" />
+                <span id="pass1"></span>
+              </div>
+              <span class="smallText"
+                >영어/숫자 각 1개이상,#,_,만 허용(글자수5~15)</span
+              >
+            </div>
+          </div>
+          <hr />
+
+          <div class="box">
+            <div class="right">
+              <span>상품명</span>
+            </div>
+            <div class="left">
+              <div class="alert">
+                <input id="goodsNm" type="text" />
+                <span id="pass2"></span>
+              </div>
+              <span class="smallText"
+                >한글,영어,숫자허용, 기호는 #만 허용함(2글자 이상)</span
+              >
+            </div>
+          </div>
+          <hr />
+
+          <div class="box">
+            <div class="right">
+              <span>담당자 이름</span>
+            </div>
+            <div class="left">
+              <div class="alert">
+                <input id="Responsible" type="text" />
+                <span id="pass3"></span>
+              </div>
+              <span class="smallText">한글만 2~5글자</span>
+            </div>
+          </div>
+          <hr />
+
+          <div id="chbox">
+            <div id="chright">
+              <span>검수 확인</span>
+            </div>
+
+            <div id="ckleft">
+              <div id="chalert">
+                <input id="check" type="checkbox" />
+                <span>담당자 상품 검수확인</span>
+              </div>
+              <div>
+                <span id="pass4"></span>
+              </div>
+            </div>
+          </div>
+          <hr />
+        </div>
+
+        <div id="btnArea">
+          <button onclick="submitbtn(); return false;">등록하기</button>
+          <button onclick="returnBtn()">다시쓰기</button>
+        </div>
+      </form>
+    </div>
+    <script src="script/script.js"></script>
+  </body>
+</html>
