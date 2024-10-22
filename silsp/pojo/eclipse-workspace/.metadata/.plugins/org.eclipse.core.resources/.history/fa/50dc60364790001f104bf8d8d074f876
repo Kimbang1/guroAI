@@ -1,0 +1,98 @@
+package quizDrill_sql;
+
+import java.sql.Connection;
+import java.sql.DriverManager;
+import java.sql.ResultSet;
+import java.sql.SQLException;
+import java.sql.Statement;
+import java.util.Scanner;
+
+public class Main {
+
+	private static Connection conn;
+	// DB 접속(=연동)
+	private static Statement stmt;
+	// SQL 구문
+	private static ResultSet rs;
+	// Select 값 반환
+
+	public static void main(String[] args) {
+		
+		try {
+			// MySQL JDBC 드라이버 로드
+			Class.forName("com.mysql.cj.jdbc.Driver");
+		    // 데이터베이스 연결 설정
+			String url = "jdbc:mysql://localhost:3306/comunity?";
+					url+= "useSSL=false&";
+		            url += "characterEncoding=utf8&";
+		            url += "useUnicode=true&";
+		            url += "serverTimezone=Asia/Seoul&";
+		            url += "allowPublicKeyRetrieval=true";
+			String uid ="root";
+			String upw ="1234";
+			// 데이터베이스 연결
+			conn = DriverManager.getConnection(url,uid,upw);
+			stmt = conn.createStatement();
+			Scanner sc = new Scanner(System.in);
+			while() {
+				
+				//작업선택
+				System.out.println("작업을 선택하세요.");
+				System.out.println("1. 회원목록 보기 2. 회비내역 보기 3. 끝내기");
+				System.out.print("번호 입력 :");			
+				int selectNum = sc.nextInt();
+				
+				
+				if (selectNum == 1) {
+					// 회원목록 출력
+					String sql= "select * from memberList";
+					rs= stmt.executeQuery(sql);
+					
+					System.out.println("번호\t 이름\t 회원ID\t 연락처\t 가입날짜");
+					System.out.println("------------------------------");
+					
+					while(rs.next()) {
+						int seq	= rs.getInt("seq");
+						String name = rs.getString("name");
+						String memID= rs.getString("memID");
+						String tel= rs.getString("tel");
+						String regTM= rs.getString("regTM");
+						
+						System.out.print(seq+"\t");
+						System.out.print(name+"\t");
+						System.out.print(memID+"\t");
+						System.out.print(tel+"\t");
+						System.out.println(regTM+"\t");
+						
+					}
+				} else if (selectNum == 2) {
+					// 회비 납부내역 출력
+					String sql= "select * from clubFee";
+					rs= stmt.executeQuery(sql);
+					
+					System.out.println("번호\t 이름\t 회원ID\t 회비\t 납부일");
+					System.out.println("------------------------------");
+					
+					while(rs.next()) {
+						int seq	= rs.getInt("seq");
+						String name = rs.getString("name");
+						String memID= rs.getString("memID");
+						String money= rs.getString("money");
+						String payTM= rs.getString("payTM");
+						
+						System.out.println(seq+"\t"+ name +"\t"+memID + "\t"+money+"\t"+payTM);
+					}
+					
+				} else {
+					System.out.println("프로그램을 종료합니다.");
+				}
+			}
+			
+	
+	}catch(ClassNotFoundException e) {
+		System.out.println("CNFE : " + e.getMessage());
+	}catch(SQLException e) {
+		 System.out.println("SQLE : " + e.getMessage());
+	}
+	}
+}

@@ -1,0 +1,17 @@
+package pkg.jdbc;
+
+public class select {
+	//필드
+	//
+	private Connection conn;
+	//DB 접속(=연동)
+	private Statement stmt;
+	//SQL 구문
+	private ResultSet rs;
+	//Select 값 반환
+	public static void main(String[] args) {
+		//int test; 지역변수
+
+	}
+
+}

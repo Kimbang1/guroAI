@@ -1,0 +1,18 @@
+package quizDrill_sql;
+
+import java.util.Scanner;
+
+public class Main {
+
+	public static void main(String[] args) {
+		
+		Scanner sc = new Scanner(System.in);
+			
+			System.out.println("작업을 선택하세요.");
+			System.out.println("1. 회원목록 보기 2. 회비내역 보기 3. 끝내기");
+			System.out.println("번호 입력 :");
+			
+		
+	}
+
+}

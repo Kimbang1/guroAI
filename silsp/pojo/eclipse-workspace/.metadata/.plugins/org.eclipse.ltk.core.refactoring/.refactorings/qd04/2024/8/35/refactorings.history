@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename package &apos;bank&apos; to &apos;bank.BasicInfo&apos;&#x0D;&#x0A;- Original project: &apos;qd04&apos;&#x0D;&#x0A;- Original element: &apos;qd04/src/bank&apos;&#x0D;&#x0A;- Renamed element: &apos;qd04/src/bank.BasicInfo&apos;&#x0D;&#x0A;- Update references to refactored element&#x0D;&#x0A;- Update textual occurrences in comments and strings" description="Rename package &apos;bank&apos;" flags="589830" hierarchical="false" id="org.eclipse.jdt.ui.rename.package" input="/src&lt;bank" name="bank.BasicInfo" qualified="false" references="true" stamp="1724766721378" textual="false" version="1.0"/>
+</session>

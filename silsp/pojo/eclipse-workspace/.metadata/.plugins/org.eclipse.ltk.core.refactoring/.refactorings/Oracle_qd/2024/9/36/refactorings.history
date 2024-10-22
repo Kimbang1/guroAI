@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename compilation unit &apos;oracle_qd01.Main.java&apos; to &apos;Management.java&apos;&#x0D;&#x0A;- Original project: &apos;Oracle_qd&apos;&#x0D;&#x0A;- Original element: &apos;oracle_qd01.Main.java&apos;&#x0D;&#x0A;- Renamed element: &apos;oracle_qd01.Management.java&apos;" description="Rename compilation unit &apos;Main.java&apos;" flags="2" id="org.eclipse.jdt.ui.rename.compilationunit" input="/src&lt;oracle_qd01{Main.java" name="Management.java" references="false" stamp="1725237704335" version="1.0"/>
+</session>

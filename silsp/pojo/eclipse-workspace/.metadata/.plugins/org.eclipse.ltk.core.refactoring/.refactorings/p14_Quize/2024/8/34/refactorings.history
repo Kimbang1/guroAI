@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename compilation unit &apos;pkg.quiz1.primeNumber.java&apos; to &apos;PrimeNumber.java&apos;&#x0D;&#x0A;- Original project: &apos;p14_Quize&apos;&#x0D;&#x0A;- Original element: &apos;pkg.quiz1.primeNumber.java&apos;&#x0D;&#x0A;- Renamed element: &apos;pkg.quiz1.PrimeNumber.java&apos;" description="Rename compilation unit &apos;primeNumber.java&apos;" flags="2" id="org.eclipse.jdt.ui.rename.compilationunit" input="/src&lt;pkg.quiz1{primeNumber.java" name="PrimeNumber.java" references="false" stamp="1724290890970" version="1.0"/>
+</session>

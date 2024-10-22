@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename package &apos;p03_Quiz&apos; to &apos;pack_gas&apos;&#x0D;&#x0A;- Original project: &apos;p03_Quiz&apos;&#x0D;&#x0A;- Original element: &apos;p03_Quiz/src/p03_Quiz&apos;&#x0D;&#x0A;- Renamed element: &apos;p03_Quiz/src/pack_gas&apos;&#x0D;&#x0A;- Update references to refactored element&#x0D;&#x0A;- Update textual occurrences in comments and strings" description="Rename package &apos;p03_Quiz&apos;" flags="589830" hierarchical="false" id="org.eclipse.jdt.ui.rename.package" input="/src&lt;p03_Quiz" name="pack_gas" qualified="false" references="true" stamp="1723360813008" textual="false" version="1.0"/>
+</session>

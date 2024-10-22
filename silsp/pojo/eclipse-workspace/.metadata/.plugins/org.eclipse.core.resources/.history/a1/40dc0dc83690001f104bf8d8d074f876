@@ -1,0 +1,60 @@
+package pkg.select;
+
+import java.sql.Connection;
+import java.sql.DriverManager;
+import java.sql.ResultSet;
+import java.sql.SQLException;
+import java.sql.Statement;
+
+public class Main {
+
+	private static Connection conn;
+	
+	private static Statement stmt;
+	
+	private static ResultSet rs;
+	
+	public static void main(String[] args) {
+	
+		
+	try {	
+	Class.forName("com.mysql.cj.jdbc.Driver");
+	
+	String url= "jdbc:mysql://localhost:3306/quiz_store?";
+			url +="useSSL=false&";
+            url += "characterEncoding=utf8&";
+            url += "useUnicode=true&";
+            url += "serverTimezone=Asia/Seoul&";
+            url += "allowPublicKeyRetrieval=true";
+	String uid ="root";
+	String upw ="1234";
+	
+	conn = DriverManager.getConnection(url,uid,upw);
+	
+	stmt = conn.createStatement();
+	
+	String sql = "select *from orderlist order by num desc";
+	rs = stmt.executeQuery(sql);
+	
+	System.out.println("번호\t 주문상품\t 주문금액\t 주문수량\t");
+	System.out.println("---------------------------------------");
+	
+	while(rs.next()) {
+		int num = rs.getInt("num");
+		String item = rs.getString("item");
+		int price = rs.getInt("price");
+		int cnt = rs.getInt("cnt");
+		System.out.print(num +"\t");
+		System.out.print(item +"\t");
+		System.out.print(price +"\t");
+		System.out.print(cnt +"\t");
+	}
+	
+	}catch(ClassNotFoundException e) {
+		System.out.println("CNFE : "+ e.getMessage());
+	}catch(SQLException e) {
+		System.out.println("SQLE : "+ e.getMessage());
+	}
+
+	}
+}

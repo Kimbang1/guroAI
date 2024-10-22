@@ -1,0 +1,37 @@
+package pkg.jdbc;
+
+public class select {
+	//필드
+	//
+	private Connection conn;
+	//DB 접속(=연동)
+	private Statement stmt;
+	//SQL 구문
+	private ResultSet rs;
+	//Select 값 반환
+	public static void main(String[] args) {
+		//int test; 지역변수
+		try {
+			Class.forName("com.mysql.cj.jdbc.Driver");	
+			
+			String url = "jdbc:mysql://localhost:3306/company?";
+			url += "useSSL=false&";
+			url += "characterEncoding=UTF8?&";
+			url += "useUnicode=true&";
+			url += "serverTimezone=Asia/Seoul&";
+			url += "allowPublicKeyRetrieval=true";
+			String uid ="root";
+			String upw ="1234";
+			
+			DriverMannager.getConnection(url, uid, upw);
+
+			System.out.println("MySQL Company DB 접속 성공!!!");
+		}catch(Class) {
+			System.out.println(e.getMessage());
+		}catch(SQLException e) {
+			System.out.println("SQLE :"+ e.getMessage());
+		}
+		
+	}
+
+}

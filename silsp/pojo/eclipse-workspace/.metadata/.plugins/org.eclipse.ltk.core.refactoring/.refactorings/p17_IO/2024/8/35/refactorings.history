@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Move package &apos;bank&apos; to &apos;qd04/src&apos;&#x0D;&#x0A;- Original project: &apos;p17_IO&apos;&#x0D;&#x0A;- Destination element: &apos;qd04/src&apos;&#x0D;&#x0A;- Original element: &apos;p17_IO/src/bank&apos;&#x0D;&#x0A;- Update references to refactored element" description="Move package" destination="=qd04/src" element1="/src&lt;bank" flags="589830" fragments="1" id="org.eclipse.jdt.ui.move" policy="org.eclipse.jdt.ui.movePackages" stamp="1724766649168" version="1.0"/>
+</session>
