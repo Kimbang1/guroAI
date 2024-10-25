@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang ="ko">
+<head>
+<meta charset="UTF-8">
+<title>HTML 입력페이지</title>
+<style>
+		div#wrap{
+			width:400px;
+			padding : 20px;
+			border : 2px solid #08f;
+			margin:10px auto;		
+		}
+		div#inputArea{
+			width:100%;
+			display : flex;	
+			flex-direction: column	
+		}
+		
+		div#btnArea{
+		font-weight : bold;
+		display:felx;
+		}
+
+
+</style>
+</head>
+<body>
+		
+		<div id="wrap">
+		<form action ="receive.jsp">
+		<h1>상품등록</h1>
+		<hr>
+		
+		<div id= inputArea>
+			<div><span>상품코드</span> <input type="text" name="gCode"></div>
+			<div><span>상품명</span> <input type="text" name="gName"></div>
+			<div><span>가격</span> <input type="text" name="price"></div>
+		</div>
+		
+		<div id="btnArea">
+		
+		<button type="button" onclick="location.href='List.jsp'">상품목록</button>
+		<button type="submit" id="intBTN">등록하기</button>
+				
+		</div>
+		
+		</form>
+		</div>
+		
+		<script>
+		btnDom=document.querySelector("#intBTN");
+		
+		btnDom.addEventListener("click",()=>{
+			let userConfirmed = confirm("등록하시겠습니까?");
+			
+			if(userConfirmed){
+			alert("등록되었습니다.");	
+			
+			window.location.href="List.jsp";
+			}else{
+				alert("등록이 취소 되었습니다.")
+			}
+		});
+		
+		</script>
+</body>
+</html>
