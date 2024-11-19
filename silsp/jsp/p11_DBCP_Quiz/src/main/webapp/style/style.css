@@ -1,0 +1,53 @@
+@charset "UTF-8";
+@import url(style_Reset.css);
+
+div#wrap {
+  width: 560px;
+  padding: 30px 20px;
+  border: 3px solid #08f;
+  border-radius: 4px;
+  margin: 10px auto;
+}
+
+h1{
+	text-indent: 20px;
+	margin-bottom: 20px;
+}
+main#main>div.colWide span:nth-child(1){
+	width: 60px;
+}
+main#main>div.colWide span:nth-child(2){
+	
+}
+main#main>div.colWide span:nth-child(3){
+	
+}
+main#main>div.colWide span:nth-child(4){
+	width: 80px;
+}
+main#main>div.colWide span:nth-child(5){
+	width: 70px;
+}
+div#headerRow{
+	background-coloer: rgba(0,138,255,0.3);
+}
+div#headerRow span{
+	font-size: 17px;
+	font-weight: bold;
+	text-align: center;
+	padding: 10px 4px;
+	border-bottom: 2px solid #ddd;
+}
+#main div.dataRow{
+	border: 2px solid #ccc;
+}
+#main div.dataRow:hover{
+	
+}
+#main div.dataRow span{
+	padding: 17px 4px;
+	font-size: 16px;
+}
+#main div.dataRow span:not(:nth-child(2)){
+	text-align: center;
+}

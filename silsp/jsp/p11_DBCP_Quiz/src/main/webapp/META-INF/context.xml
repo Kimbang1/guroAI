@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Context>
+<!--DB Connection 정보 -->
+	<Resource 
+		name = "jdbc/dbcpConn"
+		auth="Container"
+		type="javax.sql.DataSource"
+		driverClassName="com.mysql.cj.jdbc.Driver"
+		url="jdbc:mysql://localhost:3306/sampleData?
+			useSSL=false&amp;
+			useUnicode=true&amp;
+			characterEncoding=UTF-8&amp;
+			serverTImezone=Asia/Seoul&amp;
+			allowPublickeyRetrival=true&amp;
+			autoReconnect=true"
+		username = "root"
+		password = "1234"
+		maxActive = "20"
+		maxIdle = "20"
+	/>
+</Context>
+

@@ -1,0 +1,80 @@
+@charset "UTF-8";
+@import url(style_Reset.css);
+
+div#wrap {
+  width: 310px;
+  padding: 10px;
+  border: 3px solid #08f;
+  border-radius: 4px;
+  margin: 10px auto;
+}
+
+h1 {
+	text-align: center;
+}
+label {
+	margin: 20px 0;
+	display: block;
+}
+label span {
+	width: 70px;
+	text-align: right;
+	display: inline-block;
+}
+
+input[type=text] {
+	width: 160px;
+	font-size: 18px;
+	padding: 2px 6px 3px;	
+}	
+
+input[type=file] {
+	width: 190px;
+/* 	border: 1px solid #000; */
+}
+
+textarea {
+	width: 210px;
+	height: 40px;
+	vertical-align: top;
+}
+div#btnArea {
+	text-align: center;
+	margin: 10px 0;
+}
+button {
+	margin: 10px;
+	font-size: 14px;
+	padding: 3px 20px;
+	cursor: pointer;
+}
+
+main#main {
+	margin: 20px;
+}
+
+#main p {
+	margin-bottom: 10px;
+}
+
+
+/* 파일 처리 페이지 시작 */
+div#wrap.upWrap {
+	width: 420px;
+}
+
+#wrap.upWrap hr {
+	margin: 10px 0;
+}
+
+ul#prnSummary {
+	list-style: disc inside;
+	
+	margin: 15px 10px;
+}
+#prnSummary>li {
+	font-size: 20px;
+	line-height: 35px;
+}
+
+/* 파일 처리 페이지 끝 */
