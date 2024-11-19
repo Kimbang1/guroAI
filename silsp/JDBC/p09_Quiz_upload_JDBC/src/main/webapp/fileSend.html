@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<link rel="stylesheet" href="/style/style.css?v">
+</head>
+<body>
+	<div id="wrap">
+	<h1>파일업로드</h1>
+	
+	<main id="main">
+		
+	</main>
+	<hr>
+		<form action="uploadProc.jsp" method="post" enctype="multipart/form-data">
+		<label>
+		
+		<span>제목</span>
+		<input type="text" name="subject">
+		</label>
+		
+		<label>
+		<span>파일첨부</span>
+		<input type="file" name="fileName">
+		</label>
+		
+		<label>
+		<span>내용</span>
+		<input type="text" name="content">
+		</label>
+		
+		<hr>
+		<div id="btnArea">
+		<button>전송</button>
+		<button type="reset">입력취소</button>
+		</div>
+		
+		
+	
+		
+		</form>
+	</div>
+	<!-- div#wrap -->
+	<script src="/script/jquery-3.7.1.min.js"></script>
+	<script src="/script/script.js"></script>
+</body>
+</html>
