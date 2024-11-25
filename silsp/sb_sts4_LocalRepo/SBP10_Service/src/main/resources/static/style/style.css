@@ -1,0 +1,49 @@
+@charset "UTF-8";
+@import url(style_Reset.css);
+
+div#wrap {
+  width: 360px;
+  padding: 20px 10px;
+  border: 4px solid #aaa;
+  border-radius: 4px;
+  margin: 10px auto;
+}
+
+
+h1 {
+	color: #08f;
+	font-size: 24px;
+}
+
+hr {
+	margin: 15px 0;
+}
+
+div.listHeader {
+	line-height: 40px;
+	background-color: rgba(136, 136, 136, 0.1);
+}
+div.listHeader span {
+	color: #08f;
+	font-size: 18px;
+	font-weight: bold;
+}
+div.listColumn span {
+	text-align: center;
+}
+div.listColumn span:nth-child(1) {
+	width: 60px;
+}
+div.listColumn span:nth-child(2) {
+	flex: 1;
+}
+div.listColumn span:nth-child(3) {
+	width: 100px;
+}
+div.listRow {
+	line-height: 35px;
+	border-bottom: 1px solid #aaa;
+}
+
+
+

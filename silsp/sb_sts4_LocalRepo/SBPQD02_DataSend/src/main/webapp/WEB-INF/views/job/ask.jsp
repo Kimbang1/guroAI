@@ -36,17 +36,17 @@
 			</div>
 			
 			<div class="point">
-				<input type="radio" name="check">
+				<input type="radio" name="check" value="JAVA">
 				<span>JAVA</span>
 			</div>
 			
 			<div class="point">
-				<input type="radio" name="check">
+				<input type="radio" name="check" value="Android">
 				<span>Android</span>
 			</div>
 			
 			<div class="point">
-				<input type="radio" name="check">
+				<input type="radio" name="check" value="React">
 				<span>React</span>
 			</div>
 		</div>
@@ -64,7 +64,7 @@
 				</div>
 				
 				<div class="butt">
-					<button>다시쓰기</button>
+					<button type="reset">다시쓰기</button>
 				</div>
 				
 			</div>

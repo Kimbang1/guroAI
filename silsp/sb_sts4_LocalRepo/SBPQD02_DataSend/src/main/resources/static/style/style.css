@@ -2,9 +2,29 @@
 @import url(style_Reset.css);
 
 div#wrap {
-  width: 640px;
+  width: 320px;
   padding: 10px;
   border: 4px solid #aaa;
   border-radius: 4px;
   margin: 10px auto;
 }
+h1{
+	text-align: center;
+	padding: 10px auto;
+	font-weight: bold;
+	margin: 10px;	
+}
+
+/*개인정보,지원분야, 지원동기 틀 작업 시작*/
+
+ div.subTitle{
+ padding: 10px;
+ }
+
+div.inputArea>span{
+	padding: 0 10px;
+	margin: 10px;
+}
+
+
+/*개인정보,지원분야, 지원동기 틀 작업 끝*/

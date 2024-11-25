@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+	"https://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.exam.basic.dao.BoardDao">
+
+
+<select id="daoBoardList" resultType="com.exam.basic.dto.BoardDto">
+    SELECT * FROM board ORDER BY num DESC
+</select>
+
+</mapper>
+
+
