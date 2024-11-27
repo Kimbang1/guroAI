@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+	"https://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.exam.board.dao.BoardDao">
+
+
+	<!-- BBS 글목록 태그 -->
+	<select id="mtdBoardList"
+		resultType="com.exam.board.dto.BoardDto">
+		select * from board order by num desc
+	</select>
+
+	<!-- BBS 글내용 태그 -->
+	<select id="mtdBoardView"
+		resultType="com.exam.board.dto.BoardDto">
+		select * from board where num = #{num}
+	</select>
+
+	<!-- BBS 저장 태그 -->
+	<insert id="mtdBoardWrite">
+		insert into board (writer, title, content)
+		values(#{_writer}, #{_title}, #{_content})
+	</insert>
+
+	<!-- BBS 삭제 태그 -->
+	<delete id="mtdBoardDelete">
+		delete from board where num = #{num}
+	</delete>
+
+	<!-- BBS 전체 게시글 개수 태그, 반환자료형에 정수형 별칭(Alias, 얼라이어스)"_int"사용 -->
+	<select resultType="int" id="mtdArticleCnt">
+		select count(*)from board
+	</select>
+
+</mapper>

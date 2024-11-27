@@ -1,0 +1,77 @@
+@charset "UTF-8";
+@import url(style_Reset.css);
+
+div#wrap {
+  width: 320px;
+  padding: 10px;
+  border: 4px solid #aaa;
+  border-radius: 4px;
+  margin: 10px auto;
+}
+h1{
+	text-align: center;
+	padding: 10px auto;
+	font-weight: bold;
+	margin: 10px;	
+}
+
+/*개인정보,지원분야, 지원동기 틀 작업 시작*/
+
+ div.subTitle{
+ padding: 10px 0 0 10px;
+ }
+
+div.inputArea>span{
+/* 	padding: 0 10px; */
+	margin: 0 20px 0 40px;
+}
+div.inputArea>input#uname{
+	margin: 5px 15px;
+}
+div.point{
+	margin:10px 50px;
+	
+}
+div.point>span{
+	font-weight: bold;
+	font-size: 14px;
+}
+textarea#textArea{
+	width: 100%;
+	height: 100px;
+	font-size: 14px;
+}
+div#but{
+	display : flex;
+	margin: 0 5px;
+	
+}
+div#but>div.butt{
+	margin: 0 5px;
+	cursor: pointer;
+}
+
+div#but>div.butt>button{
+	font-weight: bold;
+	width: 70px;
+	height: 25px;
+}
+/*개인정보,지원분야, 지원동기 틀 작업 끝*/
+
+/* join, login 스타일 작업 시작*/
+
+
+div#Btn{
+	margin: 10px;
+}
+div#Btn>button{
+	color: white;
+	background-color: #4fad75;
+	width: 100%;
+	height: 45px;
+	font-size: 14px;
+	border: 1px;
+	border-radius: 10px;
+	
+}
+/* join, login 스타일 작업 끝*/

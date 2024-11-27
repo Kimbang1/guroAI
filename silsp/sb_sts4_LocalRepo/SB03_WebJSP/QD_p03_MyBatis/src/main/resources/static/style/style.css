@@ -1,0 +1,137 @@
+@charset "UTF-8";
+
+div#wrap{
+	width: 380px;
+ 	border: 2px solid #aaa;;
+ 	border-radius : 5px;
+ 	margin: 10px auto;
+ 	padding: 10px auto;
+}
+
+/* goodsReg 작업 시작 */
+div#head{
+	display:flex;
+}
+div.showin{
+	border: 1px solid #000;	
+	width: 100px;
+	text-align: center;
+	font-style: 14px;
+}
+h3{
+	width: 80px;
+	padding: 10px;
+	margin: 10px;
+}
+div#right{
+	display:flex;
+	margin:10px 5px;
+	padding: 10px;
+}
+div.block{
+	margin-left: 10px;
+	display:flex;
+}
+div.namebox{
+	width: 100px;
+	font-size: 16px;
+	text-align:left;
+	padding: 10px;
+/* 	border: 1px solid #aaa; */
+	background-color: #E6EDF6;
+}
+
+div.namebox>span{
+	margin-left: 10px;
+	font-weight: bold;
+}
+div.block>input{
+	margin: 5px 30px;
+	border: 1px solid #000;
+}
+div#btnArea{
+	margin:0 30px;
+}
+div#btnArea>button{
+	cursor: pointer;
+	border: 1px solid #aaa;
+	border-radius: 5px;
+	width: 100px;
+	height: 30px;
+	font-weight: bold;
+	margin: 5px;
+}
+div#btnArea>button:hover{
+	background-color: #aaa;
+}
+/* goodsReg 작업 끝 */
+
+/* goodsList 작업 시작*/
+div#wrap2{
+	width: 600px;
+ 	border: 2px solid #aaa;;
+ 	border-radius : 5px;
+ 	margin: 10px auto;
+ 	padding: 10px auto;
+}
+
+div#head2{
+	display : flex;
+	justify-content: space-around;
+}
+div.dFlex{
+	display:flex;
+	justify-content: space-around;
+}
+div#delArea{
+	margin: 10px;
+
+}
+
+div#delArea>button{
+	border:1px solid #000;
+	border-radius: 5px;
+	width: 80px;
+	height: 30px;
+	transform:translateY(-5px);
+}
+
+#left2>button{
+	cursor: pointer;
+	border: 1px solid #aaa;
+	border-radius: 5px;
+	width: 80px;
+	height: 30px;
+	font-weight: bold;
+	margin: 5px;
+}
+#left2>input{
+	width: 140px;
+	height: 25px;
+}
+table {
+	width: 600px;
+	border-collapse: collapse;
+}
+
+th {
+	color: #08f;
+	padding: 10px;
+	background-color: #E6EDF6;
+}
+
+td {
+	padding: 6px;
+	border-bottom: 1px solid #ddd;
+	text-align: center;
+}
+
+a {
+	color: #333;
+	text-decoration: none;
+}
+
+a:hover {
+	color: rgba(51, 51, 51, 0.5);
+	font-weight: bold;
+}
