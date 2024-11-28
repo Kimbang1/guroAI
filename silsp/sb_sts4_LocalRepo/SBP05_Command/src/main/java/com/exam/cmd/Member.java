@@ -1,5 +1,6 @@
 package com.exam.cmd;
 
+
 public class Member {
 	private String uid;
 	private String uname;

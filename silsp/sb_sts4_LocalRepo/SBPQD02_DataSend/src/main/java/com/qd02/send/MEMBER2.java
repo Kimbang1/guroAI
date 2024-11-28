@@ -11,6 +11,7 @@ import org.springframework.web.bind.annotation.RequestParam;
 //만약 일어나게 된다면 @Controller 아래에 접두사를 하나 붙여준다
 //그전에 jsp파일도 분리시켜줘야 한다.
 //예를 들어 mem과 register라는 파일로 나누어주고 컨트롤러를 추가해야 충돌날 오류가 적어진다.
+
 //@Controller
 //@RequestMapping("/mem)
 //......

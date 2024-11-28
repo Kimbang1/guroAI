@@ -21,7 +21,7 @@
 			
 			<div class="inputArea">
 				<span>이름</span>
-				<input type="text" name="uname" placeholder="공백없이 입력하세요.">
+				<input id="uname" type="text" name="uname" placeholder="공백없이 입력하세요.">
 			</div>
 
 			<div class="inputArea">
@@ -55,7 +55,7 @@
 		
 			<div class="subTitle">
 				<h3>지원 동기</h3>
-				<input type="text" name="jiwon" placeholder="지원 동기 기재란">
+				<textarea id="textArea" name="jiwon" placeholder="지원 동기 기재란"></textarea>
 			</div>		
 				
 			<div id="but">

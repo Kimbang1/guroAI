@@ -19,8 +19,15 @@
 		
 		<hr>
 		<div id="btnArea">
+			<button type="button" id="fileDownBtn">다운로드</button>
+			<button type="button" id="fileDelBtn">파일삭제</button>
 			<button type="button" onclick="location.href='/fileForm'">입력하기</button>
 		</div>
+		
+		<form id="fileMgrForm">
+			<input type="hidden" name="oriName" value="${list.get(0)}">
+			<input type="hidden" name="sysName" value="${list.get(1)}">
+		</form>
 	</div>
 	<!-- div#wrap -->
 	<script src="/script/jquery-3.7.1.min.js"></script>

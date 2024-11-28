@@ -1,0 +1,123 @@
+@charset "UTF-8";
+@import url(style_Reset.css);
+
+div#wrap {
+  width: 326px;
+  padding: 20px 10px;
+  border: 2px solid #ccc;
+  border-radius: 4px;
+  margin: 10px auto;
+}
+form#loginFrm {
+	width: 100%;
+/* 	border: 1px solid #000; */
+}
+
+form#loginFrm h1 {
+	font-size: 24px;
+	margin-bottom: 20px;
+}
+form#loginFrm p {
+	font-size: 14px;
+	font-weight: bold;
+	margin: 20px 0 6px;
+}
+
+form#loginFrm input {
+	width: 300px;
+	font-size: 17px;
+	padding: 8px 12px;
+}
+
+#loginFrm div#btnArea {
+	margin: 20px 0 0;
+}
+#loginFrm div#btnArea>button,
+#joinFrm div#btnArea>button {
+	width: 100%;
+	height: 45px;
+	color: #fff;
+	font-size: 16px;
+	font-weight: bold;
+	
+	border: none;
+	border-radius: 22px;
+	background-color: #03b070;
+	cursor: pointer;
+}
+
+
+/* 회원가입 시작 */
+form#joinFrm div#joinChkBoxArea {
+	text-align: left;
+	margin: 10px 0;
+} 
+form#joinFrm div#joinChkBoxArea input {
+	width: 17px;
+	height: 17px;
+}
+
+
+/* 개발자 지원서 시작 */
+div#wrap.applyWrap {
+	width: 350px;
+}
+
+#wrap.applyWrap h1 {
+	text-align: center;
+}
+
+#wrap.applyWrap hr {
+	margin: 10px 0;
+}
+
+form#applyForm fieldset {
+	border: none;
+	margin: 8px 0 3px;
+}
+form#applyForm fieldset legend {
+	font-weight: bold;
+}
+form#applyForm label {
+/* 	border: 1px solid #000; */
+	margin: 6px 0 6px 45px;
+	display: block;
+}
+
+form#applyForm label span {
+	width: 50px;
+	display: inline-block;
+}
+
+form#applyForm label span+input {
+	font-size: 16px;
+	padding: 3px 0 4px 6px;
+}
+
+fieldset#applyFieldset input[type=radio] {
+	width: 14px;
+	height: 14px;
+	transform: translateY(2px);
+}
+
+
+fieldset#motiveFieldset textarea {
+	width: 100%;
+	height: 70px;
+	
+	padding: 8px;
+}
+
+form#applyForm button {
+	font-size: 13px;
+	font-weight: bold;
+	padding: 4px 8px;
+	margin-right: 6px;
+	cursor: pointer;
+}
+
+
+
+
+
+
