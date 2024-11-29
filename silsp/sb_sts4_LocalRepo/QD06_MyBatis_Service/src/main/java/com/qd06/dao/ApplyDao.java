@@ -21,7 +21,7 @@ public interface ApplyDao {
 	public applyDto applyDetail(String num);
 	
 	//지원서 수정 
-	public void mtdUpdateProc(Map<String, String>map);
+	public int mtdUpdateProc(Map<String, String>map);
 	
 
 }

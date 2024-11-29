@@ -13,15 +13,17 @@ import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.servlet.mvc.support.RedirectAttributes;
 
+import com.qd06.Service.Service1;
 import com.qd06.dao.ApplyDao;
-import com.qd06.dto.applyDto;
 
 @Controller
 public class MainController {
 	
 	@Autowired
-	private ApplyDao applyDao;
+	private Service1 service1;
 
+	 @Autowired
+	 private ApplyDao applyDao;
 	
 	@GetMapping("/")
 	@ResponseBody
@@ -40,8 +42,7 @@ public class MainController {
 	public String refactor(@RequestParam("num") String num, Model model){
 	    
 	    // 수정할 지원자 정보 model에 추가
-			model.addAttribute("applyDto", applyDao.applyDetail(num));
-	    model.addAttribute("num", num);
+			model.addAttribute("applyDto", service1.applyDetail(num));
 	    return "refactor"; // 수정 페이지로 이동
 	}
 
@@ -67,7 +68,7 @@ public class MainController {
 			map.put("applyPart", applyPart);
 			map.put("applyMotive", applyMotive);
 			
-			applyDao.mtdUpdateProc(map);
+			service1.mtdUpdateProc(map);
 	    // 수정 완료 후 리스트 페이지로 리디렉션
 	    return "redirect:/applyList";
 	}
@@ -91,7 +92,7 @@ public class MainController {
 		map.put("applyPart", applyPart);
 		map.put("applyMotive", applyMotive);
 		
-		applyDao.mtdRegProc(map);
+		service1.mtdRegProc(map);
 		
 		return "redirect:applyList";
 	}
@@ -105,7 +106,7 @@ public class MainController {
 //		int numParam = Integer.parseInt(num);
 	    // ApplyDto 객체를 model에 추가
 		try {
-			model.addAttribute("applyDto", applyDao.applyDetail(num));
+			model.addAttribute("applyDto",service1.applyDetail(num));
 			
 		} catch (Exception e) {
 			return "error";
@@ -120,7 +121,7 @@ public class MainController {
 	@RequestMapping("/applyList")
 	public String list(Model model) {
 		model.addAttribute("mtdList",applyDao.mtdList());
-		applyDao.mtdList();
+		service1.mtdList();
 		return "applyList";
 	}
 	

@@ -1,6 +1,7 @@
 #####  D/N : JobManager
 
 create database JobManager;
+
 use JobManager;
 
 
@@ -16,5 +17,8 @@ constraint  primary key(userName, userPhone)
 );
 desc applyList;
 
-select * from applyList order by num desc;
+SET SQL_SAFE_UPDATES = 0;
 
+
+drop table applyList;
+select * from applyList order by num desc;
