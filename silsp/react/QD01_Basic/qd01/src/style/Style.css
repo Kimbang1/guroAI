@@ -1,0 +1,53 @@
+/* src/style/App.css */
+
+/* 전체 컨테이너 스타일 */
+.elixirs {
+  width: 200px;
+  margin: auto;
+  border: 1px solid #0070e0;
+  padding: 20px;
+  background-repeat: repeat-y;
+  background-size: contain;
+}
+/* 헤더 스타일*/
+header {
+  width: 100%;
+  height: 30px;
+  text-align: center;
+  background-image: url("../images/cocktail.gif");
+  background-size: cover; /* 배경 이미지가 요소 크기에 맞게 조정됨 */
+  background-repeat: repeat-x;
+  background-position: center; /* 배경 이미지를 중앙에 위치시킴 */
+  height: 150px; /* 헤더의 높이를 설정 */
+  display: flex; /* 콘텐츠를 정렬하기 위해 flexbox 사용 */
+  align-items: center; /* 세로 가운데 정렬 */
+  justify-content: center; /* 가로 가운데 정렬 */
+  font-size: 1.5rem; /* 텍스트 크기 */
+  font-weight: bold; /* 텍스트 굵기 */
+}
+
+header > span {
+  font-weight: bold;
+}
+/* 내부 상자 스타일 */
+.inner-box {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+/* 텍스트 및 이미지 스타일 */
+.drink-image {
+  width: 50px;
+  height: 90px;
+}
+
+h2 {
+  margin: 1em 0;
+  font-size: 1em;
+  color: #0070e0;
+}
+
+p {
+  font-size: 0.9em;
+  line-height: 1.5;
+}

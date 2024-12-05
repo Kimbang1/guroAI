@@ -3,14 +3,12 @@ import ReactDOM from "react-dom/client";
 import "./index.css";
 import App from "./App";
 import reportWebVitals from "./reportWebVitals";
-import Market from "./buylist/Market";
-import Print from "./sample/print";
-import "./sample/Now.js";     //자바스크립트와 css는 대체 변수 사용하지 않고 쓰길 추천
-
+import NO from "./NoFunction";
+import List from "./compornant/List";
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <React.StrictMode>
-    <Print />
+    <List />
   </React.StrictMode>
 );
 

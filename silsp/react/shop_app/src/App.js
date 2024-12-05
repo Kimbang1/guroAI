@@ -1,24 +1,19 @@
-import logo from './logo.svg';
-import './App.css';
+import logo from "./logo.svg";
+import "./App.css";
+import React from "react";
 
+import "./style/Style.css";
 function App() {
+  //   const element = <h1 className='h1Area'>jsx 출력 2</h1>;
+
+  const element = React.createElement(
+    "h1",
+    { className: "sample" },
+    "JSX 출력3."
+  );
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    // <h1 className='h1Area'>jsx를 사용한 출력</h1>
+    element
   );
 }
 
