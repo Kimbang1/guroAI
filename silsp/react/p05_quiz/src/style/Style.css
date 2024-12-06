@@ -1,0 +1,29 @@
+div.viewBox {
+  width: 300px;
+  margin: 30px auto;
+  border: 1px solid #000;
+}
+h1 {
+  text-align: center;
+}
+div#inputBox {
+  border: 1px solid #aaa;
+  margin: 10px;
+}
+div.inputArea {
+  margin: 10px;
+}
+div.inputArea > input {
+  width: 100%;
+  height: 30px;
+  border: 1px solid #000;
+}
+div#BtnArea {
+  margin: 10px;
+}
+div#BtnArea > button {
+  width: 100%;
+  height: 30px;
+  color: azure;
+  background-color: #5187f3;
+}

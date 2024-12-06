@@ -5,10 +5,13 @@ import App from "./App";
 import reportWebVitals from "./reportWebVitals";
 import NO from "./NoFunction";
 import List from "./compornant/List";
+import Login from "./p05/Login";
+
+import Test from "./sub/Test";
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <React.StrictMode>
-    <List />
+    <Login />
   </React.StrictMode>
 );
 

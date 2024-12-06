@@ -1,9 +1,6 @@
 import logo from "./logo.svg";
 import "./App.css";
-import black from "./images/black.gif";
-import chai from "./images/chai.gif";
-import cocktail from "./images/cocktail.gif";
-import yellow from "./images/yellow.gif";
+
 import "./style/Style.css";
 
 const drink = [
@@ -11,21 +8,21 @@ const drink = [
     name: "레몬 브리즈",
     description:
       "허브티, 미네랄, 푸르티드 음료와 레몬의 조화를 즐길 수 있는 최고의 음료입니다.",
-    image: yellow,
+    image: "/images/yellow.gif",
   },
 
   {
     name: "차가운 차이맛 음료",
     description:
       "일반 차이티가 아닙니다. 얼음을 넣고 휘핑으로 마무리하여 고급스러운 향을 즐길 수 있습니다.",
-    image: chai,
+    image: "/images/chai.gif",
   },
 
   {
     name: "블랙 베리안 음료",
     description:
       "강렬한 베리와 블랙커피가 조화를 이루는 저녁시간에 적합한 음료입니다.",
-    image: black,
+    image: "/images/black.gif",
   },
 ];
 function App() {
