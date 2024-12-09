@@ -18,6 +18,11 @@ function Login(props) {
       : alert("입력이 뭔가 이상한데?");
   };
 
+  //회원가입 클릭시 페이지 이동?
+  const joinnBtn = () => {
+    Location;
+  };
+
   return (
     <div class="viewBox">
       <h1>로그인</h1>
@@ -32,6 +37,7 @@ function Login(props) {
 
         <div id="BtnArea">
           <button onClick={loginBtn}>로그인</button>
+          <button onClick={joinnBtn}>회원가입</button>
         </div>
       </div>
     </div>

@@ -1,0 +1,7 @@
+@charset "UTF-8";
+.sample {
+  color: #08f;
+  font-size: 30px;
+  border: 2px solid #aaa;
+  background-image: url(../bglmages/cocktail.gif);
+}
